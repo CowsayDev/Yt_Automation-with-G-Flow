@@ -1,0 +1,15 @@
+name: Unzip
+on: workflow_dispatch
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          unzip -o "*.zip"
+          rm *.zip
+          git config user.name "bot"
+          git config user.email "bot@bot.com"
+          git add .
+          git commit -m "unzipped" || true
+          git push
