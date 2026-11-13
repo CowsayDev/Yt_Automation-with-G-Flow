@@ -1,18 +1,23 @@
 {
   "series_title": "THE OTHER SIDE",
-  "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
-  "protagonist_age": 24,
-  "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
+  "series_format": "ongoing cinematic 3D animated series mixing a recognizable real world with an original fantasy world",
+  "protagonist": {"age": 24, "identity": "to be organically established in Episode 1"},
+  "creative_policy": "high creative freedom; no fixed plot, no fixed ending; preserve continuity and originality",
   "next_episode_number": 1,
-  "world_state": {},
+  "world_state": {"real_world": "modern, globally recognizable everyday life", "fantasy_world": "unknown; discover organically through the story"},
   "characters": [],
   "open_mysteries": [],
   "important_events": [],
   "continuity_rules": [
     "Keep recurring character identities and visual traits consistent.",
-    "Invent new characters, places and plotlines when narratively useful.",
-    "Maintain cause and effect across episodes.",
-    "Do not copy existing franchises or recognizable characters."
+    "Preserve cause and effect across episodes; never restart the story.",
+    "Invent new characters, places and plotlines whenever narratively useful.",
+    "Characters may enter, leave, change sides or die only when narratively justified.",
+    "Do not force a predetermined ending.",
+    "Use visual storytelling and universal emotions for international audiences.",
+    "Do not copy existing franchises, characters, scripts or signature styles."
   ],
-  "recent_episode_summaries": []
+  "recent_episode_summaries": [],
+  "last_episode_title": null,
+  "last_updated_utc": null
 }
