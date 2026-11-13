@@ -1,7 +1,3 @@
-# YouTube publishing stage — not yet automated
+# YouTube publishing — not implemented
 
-The Story Engine currently creates episode JSON and Google Flow scene prompts. It does not yet
-create a video file or publish to YouTube. Add the YouTube Data API OAuth uploader only after the
-Flow stage has been verified. Store OAuth client secrets/refresh tokens in GitHub Secrets, use
-least-privilege scopes, add duplicate-upload/idempotency checks, and start with private or unlisted
-uploads plus human review before public publishing.
+The current workflow does not upload videos to YouTube. A future uploader needs a Google Cloud project, YouTube Data API configuration, OAuth consent and refresh-token handling. Keep credentials in GitHub Secrets and never commit them. Upload only after a rendered video exists and the user has approved the title, description, visibility and destination channel.
