@@ -1,48 +1,34 @@
-
-name: Import ASURA Engine ZIP
-
-on:
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  import-project:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Extract ASURA Engine
-        run: |
-          set -e
-
-          ZIP="asura_engine_starter-1.zip"
-          test -f "$ZIP"
-
-          mkdir -p /tmp/asura-import
-          unzip -q "$ZIP" -d /tmp/asura-import
-
-          test -f /tmp/asura-import/main.py
-
-          cp -a /tmp/asura-import/. .
-
-          rm -f "$ZIP"
-
-          find . -type d -name __pycache__ -prune -exec rm -rf {} +
-
-      - name: Commit imported files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
-
-          if ! git diff --cached --quiet; then
-            git commit -m "Import ASURA Engine project"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+- name: Extract ASURA Engine
+  run: |
+    set -e
+    echo "Listing files..."
+    ls -la
+    
+    # ZIP ka naam auto-detect karega
+    ZIP=$(ls -1 *.zip | head -n 1)
+    echo "Found ZIP: $ZIP"
+    
+    rm -rf /tmp/asura-import
+    mkdir -p /tmp/asura-import
+    unzip -q "$ZIP" -d /tmp/asura-import
+    
+    echo "Inside ZIP:"
+    ls -la /tmp/asura-import
+    
+    # Agar ZIP ke andar ek folder hai to usko handle kare
+    if [ ! -f /tmp/asura-import/main.py ]; then
+      echo "main.py root me nahi, subfolder check kar rahe..."
+      SUB=$(find /tmp/asura-import -name "main.py" -printf "%h" -quit)
+      if [ -n "$SUB" ]; then
+        cp -a $SUB/. .
+      else
+        echo "ERROR: main.py kahin bhi nahi mila"
+        exit 1
+      fi
+    else
+      cp -a /tmp/asura-import/. .
+    fi
+    
+    rm -rf "$ZIP" /tmp/asura-import
+    find . -type d -name "__pycache__" -prune -exec rm -rf {} +
+    echo "Extract done!"
