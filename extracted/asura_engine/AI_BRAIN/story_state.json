@@ -1,12 +1,9 @@
 {
   "series_title": "THE OTHER SIDE",
-  "series_format": "ongoing cinematic 3D animated series mixing a recognizable real world with an original fantasy world",
-  "protagonist": {
-    "age": 24,
-    "identity": "to be organically established in Episode 1"
-  },
+  "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
+  "protagonist_age": 24,
   "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
-  "next_episode_number": 2,
+  "next_episode_number": 1,
   "world_state": {},
   "characters": [],
   "open_mysteries": [],
@@ -17,10 +14,5 @@
     "Maintain cause and effect across episodes.",
     "Do not copy existing franchises or recognizable characters."
   ],
-  "recent_episode_summaries": [],
-  "last_episode_title": "The Glass Pavement",
-  "last_updated_utc": "2026-11-13T19:24:10.200888+00:00",
-  "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
-  "protagonist_age": 24,
-  "last_episode_generation_model": "gemini-3.5-flash-lite"
+  "recent_episode_summaries": []
 }
