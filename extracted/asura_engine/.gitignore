@@ -1,5 +1,6 @@
 .env
+*.log
 __pycache__/
+.pytest_cache/
 *.py[cod]
-*.tmp
-.venv/
+playwright/.auth/
