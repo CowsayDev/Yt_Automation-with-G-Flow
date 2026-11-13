@@ -1,0 +1,168 @@
+{
+  "episode_number": 2,
+  "title": "The Threshold of Cinder",
+  "logline": "Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. A rugged traveler named Orin abruptly steps through a dimensional tear, uses a brass astrolabe to seal the breach in obsidian glass, and forces them across the threshold into t",
+  "previously_on": "The story begins.",
+  "story_summary": "Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. A rugged traveler named Orin abruptly steps through a dimensional tear, uses a brass astrolabe to seal the breach in obsidian glass, and forces them across the threshold into the floating world of Vaelen, where twin red suns overlook an alien landscape.",
+  "new_characters": [],
+  "character_updates": [],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 6,
+      "location": "Leo's Urban Apartment Kitchen, Chicago",
+      "characters": [
+        "Leo",
+        "Mira"
+      ],
+      "action": "Leo drops a cracked porcelain coffee mug onto the tiled floor, staring in disbelief as the coffee spills into a glowing, rune-like pattern instead of a standard puddle.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "Mira, look at the floor. This doesn't make any sense."
+        },
+        {
+          "character": "Mira",
+          "line": "Don't touch it, Leo! That's not coffee, that's raw resonance."
+        }
+      ],
+      "camera": "Medium close-up tracking the falling mug, tilting down rapidly to track the expanding glowing liquid on the kitchen tiles.",
+      "visual_prompt": "Cinematic 3D animation style. A 24-year-old male protagonist named Leo, with messy dark hair, wearing a worn gray hoodie, staring down in shock in a cluttered urban apartment kitchen. Next to him is Mira, a 26-year-old female archivist with sharp amber eyes and a teal trench coat, pointing at the floor. Spilled liquid glowing with blue ethereal runes across white ceramic tiles. Dramatic interior lighting, moody blue and warm amber tones, crisp focus, rich textures.",
+      "audio_prompt": "Sound of ceramic shattering, followed by a low sub-bass hum and fluid crackling energy.",
+      "continuity_notes": "Establishes Leo's apartment, introduces Mira, and shows the direct physical consequence of the magical bleed-through from Episode 1."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 7,
+      "location": "Leo's Urban Apartment Living Room, Chicago",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin"
+      ],
+      "action": "A tall, cloaked stranger named Orin steps out from a shimmering vertical tear in the living room wallpaper, holding a brass astrolabe that spins wildly.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "You two opened the seal on the pavement. Now the border is collapsing entirely."
+        },
+        {
+          "character": "Leo",
+          "line": "Who are you? How did you get into my apartment?"
+        }
+      ],
+      "camera": "Wide shot pushing in slowly as Orin steps through the tear, framing Leo and Mira in the foreground looking startled.",
+      "visual_prompt": "Cinematic 3D animation style. Orin, a 40-year-old male wanderer with weathered skin, short silver hair, wearing a heavy leather traveler's cloak and brass goggles on his forehead, stepping through a shimmering dimensional tear in a modest living room. Leo and Mira react defensively in the foreground. High contrast cinematic lighting, dust motes floating in the air, detailed fabric and metal textures.",
+      "audio_prompt": "A sharp tearing sound of fabric, metallic clinking of gear, and an escalating chime of magical frequency.",
+      "continuity_notes": "First appearance of Orin. Maintains continuity of Leo and Mira's positioning from the kitchen into the living room."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "location": "Leo's Urban Apartment Living Room, Chicago",
+      "characters": [
+        "Leo",
+        "Orin"
+      ],
+      "action": "Orin slams the base of his brass astrolabe against the living room coffee table, freezing the glowing dimensional tear into solid obsidian glass.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "There's no time to explain. We have to cross over before they find this anchor."
+        }
+      ],
+      "camera": "Close-up on the astrolabe striking the wooden table, sending out a shockwave ripple across the camera lens.",
+      "visual_prompt": "Cinematic 3D animation style. Orin's weathered hands slamming a complex brass astrolabe onto a worn wooden coffee table. The surrounding space distorts and freezes into black reflective glass. Dynamic lighting with golden sparks flying off the brass instrument, shallow depth of field, sharp focus.",
+      "audio_prompt": "Heavy metallic thud, followed by a crisp glass-shattering echo that abruptly cuts to absolute silence.",
+      "continuity_notes": "Demonstrates Orin's competence and specialized gear. Prepares the transition to the fantasy world."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 6,
+      "location": "The Cinder Spire Balcony, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin"
+      ],
+      "action": "Leo, Mira, and Orin stumble forward onto a massive stone balcony overlooking an alien landscape filled with floating islands and twin red suns.",
+      "dialogue": [
+        {
+          "character": "Mira",
+          "line": "By all the archives... we aren't in Chicago anymore."
+        },
+        {
+          "character": "Leo",
+          "line": "What is that thing in the sky?"
+        }
+      ],
+      "camera": "Over-the-shoulder shot panning up from the trio to reveal the vast, breathtaking fantasy horizon of Vaelen.",
+      "visual_prompt": "Cinematic 3D animation style. Leo (wearing his gray hoodie), Mira (in her teal trench coat), and Orin (in his leather cloak) standing on an ancient weathered stone balcony. Before them spreads a vast fantasy world with floating rock formations, waterfalls pouring into mist, and two red suns setting in a purple sky. Epic wide-angle framing, atmospheric haze, warm twilight lighting, high detail landscape rendering.",
+      "audio_prompt": "A rush of cool wind, distant haunting bell chimes, and a low atmospheric drone.",
+      "continuity_notes": "Successful transition into the fantasy realm. Maintains all character outfits and physical states from the previous scenes."
+    }
+  ],
+  "ending_hook": "As the twin red suns dip below the horizon of Vaelen, the brass astrolabe in Orin's hand begins to spin backward violently, signaling that someone—or something—has followed them through the closed portal from Chicago.",
+  "next_episode_seeds": [],
+  "memory_update": {
+    "world_state": {
+      "current_location": "The Cinder Spire Balcony, Vaelen",
+      "portal_status": "Chicago apartment anchor temporarily frozen in obsidian glass",
+      "environmental_features": "Floating islands, twin red suns, purple atmosphere"
+    },
+    "characters": [
+      {
+        "name": "Leo",
+        "age": 24,
+        "appearance": "Messy dark hair, expressive eyes, athletic build",
+        "clothing": "Worn gray hoodie, dark jeans, canvas sneakers",
+        "voice": "Casual, grounded, increasingly bewildered",
+        "personality": "Inquisitive, reluctant hero, quick to react",
+        "distinctive_prop": "Cracked porcelain coffee mug fragments in his apartment",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Mira",
+        "age": 26,
+        "appearance": "Sharp amber eyes, tied-back dark hair, focused expression",
+        "clothing": "Teal trench coat over practical urban wear",
+        "voice": "Analytical, sharp, knowledgeable",
+        "personality": "Cautious scholar, resourceful, protective",
+        "distinctive_prop": "Leather-bound archive notebook",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Orin",
+        "age": 40,
+        "appearance": "Weathered skin, short silver hair, rugged traveler's build",
+        "clothing": "Heavy leather traveler's cloak, reinforced boots",
+        "voice": "Gravelly, urgent, authoritative",
+        "personality": "Pragmatic survivalist, secretive, mission-driven",
+        "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
+        "first_seen_episode": 2
+      }
+    ],
+    "open_mysteries": [
+      "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
+      "Who are 'they' that Orin warned would find the apartment anchor?",
+      "What is Orin's true connection to the dimensional tears bridging Earth and Vaelen?"
+    ],
+    "important_events": [
+      "Leo spilled coffee that turned into glowing runes in his Chicago apartment.",
+      "Orin stepped through a dimensional tear and used a brass astrolabe to seal it into obsidian glass.",
+      "Orin transported Leo and Mira through the threshold to the Cinder Spire in Vaelen."
+    ],
+    "continuity_rules": [
+      "Keep recurring character identities and visual traits consistent.",
+      "Invent new characters, places and plotlines when narratively useful.",
+      "Maintain cause and effect across episodes.",
+      "Do not copy existing franchises or recognizable characters."
+    ],
+    "recent_episode_summaries": [
+      "Episode 1: Leo encountered strange glass anomalies on a Chicago pavement, setting off a magical awakening.",
+      "Episode 2: Magical resonance breached Leo's apartment kitchen, leading to the arrival of Orin and a forced transit to the fantasy world of Vaelen.",
+      "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. A rugged traveler named Orin abruptly steps through a dimensional tear, uses a brass astrolabe to seal the breach in obsidian glass, and forces them across the threshold into the floating world of Vaelen, where twin red suns overlook an alien landscape."
+    ]
+  },
+  "generation_model": "gemini-3.5-flash-lite"
+}

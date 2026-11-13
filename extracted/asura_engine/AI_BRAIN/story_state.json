@@ -1,18 +1,74 @@
 {
   "series_title": "THE OTHER SIDE",
-  "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
-  "protagonist_age": 24,
+  "series_format": "ongoing cinematic 3D animated series mixing a recognizable real world with an original fantasy world",
+  "protagonist": {
+    "age": 24,
+    "identity": "to be organically established in Episode 1"
+  },
   "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
-  "next_episode_number": 1,
-  "world_state": {},
-  "characters": [],
-  "open_mysteries": [],
-  "important_events": [],
+  "next_episode_number": 3,
+  "world_state": {
+    "current_location": "The Cinder Spire Balcony, Vaelen",
+    "portal_status": "Chicago apartment anchor temporarily frozen in obsidian glass",
+    "environmental_features": "Floating islands, twin red suns, purple atmosphere"
+  },
+  "characters": [
+    {
+      "name": "Leo",
+      "age": 24,
+      "appearance": "Messy dark hair, expressive eyes, athletic build",
+      "clothing": "Worn gray hoodie, dark jeans, canvas sneakers",
+      "voice": "Casual, grounded, increasingly bewildered",
+      "personality": "Inquisitive, reluctant hero, quick to react",
+      "distinctive_prop": "Cracked porcelain coffee mug fragments in his apartment",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Mira",
+      "age": 26,
+      "appearance": "Sharp amber eyes, tied-back dark hair, focused expression",
+      "clothing": "Teal trench coat over practical urban wear",
+      "voice": "Analytical, sharp, knowledgeable",
+      "personality": "Cautious scholar, resourceful, protective",
+      "distinctive_prop": "Leather-bound archive notebook",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Orin",
+      "age": 40,
+      "appearance": "Weathered skin, short silver hair, rugged traveler's build",
+      "clothing": "Heavy leather traveler's cloak, reinforced boots",
+      "voice": "Gravelly, urgent, authoritative",
+      "personality": "Pragmatic survivalist, secretive, mission-driven",
+      "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
+      "first_seen_episode": 2
+    }
+  ],
+  "open_mysteries": [
+    "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
+    "Who are 'they' that Orin warned would find the apartment anchor?",
+    "What is Orin's true connection to the dimensional tears bridging Earth and Vaelen?"
+  ],
+  "important_events": [
+    "Leo spilled coffee that turned into glowing runes in his Chicago apartment.",
+    "Orin stepped through a dimensional tear and used a brass astrolabe to seal it into obsidian glass.",
+    "Orin transported Leo and Mira through the threshold to the Cinder Spire in Vaelen."
+  ],
   "continuity_rules": [
     "Keep recurring character identities and visual traits consistent.",
     "Invent new characters, places and plotlines when narratively useful.",
     "Maintain cause and effect across episodes.",
     "Do not copy existing franchises or recognizable characters."
   ],
-  "recent_episode_summaries": []
+  "recent_episode_summaries": [
+    "Episode 1: Leo encountered strange glass anomalies on a Chicago pavement, setting off a magical awakening.",
+    "Episode 2: Magical resonance breached Leo's apartment kitchen, leading to the arrival of Orin and a forced transit to the fantasy world of Vaelen.",
+    "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. A rugged traveler named Orin abruptly steps through a dimensional tear, uses a brass astrolabe to seal the breach in obsidian glass, and forces them across the threshold into the floating world of Vaelen, where twin red suns overlook an alien landscape."
+  ],
+  "last_episode_title": "The Threshold of Cinder",
+  "last_updated_utc": "2026-11-13T20:12:32.696453+00:00",
+  "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
+  "protagonist_age": 24,
+  "last_reconciled_episode": 1,
+  "last_episode_generation_model": "gemini-3.5-flash-lite"
 }
