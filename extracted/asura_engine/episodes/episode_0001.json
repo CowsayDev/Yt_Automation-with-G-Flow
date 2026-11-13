@@ -1,0 +1,107 @@
+{
+  "episode_number": 1,
+  "title": "The Glass Pavement",
+  "logline": "",
+  "previously_on": "The story begins.",
+  "story_summary": "",
+  "new_characters": [],
+  "character_updates": [],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 10,
+      "location": "Unspecified location",
+      "characters": [],
+      "action": "A character advances the scene.",
+      "dialogue": [
+        {
+          "character": "Narrator",
+          "line": "It shouldn't be warm. Bricks don't radiate heat in the rain."
+        }
+      ],
+      "camera": "Cinematic medium shot with a slow, controlled camera move",
+      "visual_prompt": "Cinematic 3D animation. Subject: Leo, a 24-year-old man with messy dark blonde hair, sharp jawline, wearing a worn charcoal field jacket over a dark grey hoodie and scuffed boots. Action: Leo is crouched down in a damp, graffiti-covered alleyway in a modern rainy city, pressing his bare palm against an ordinary brick wall that is strangely shimmering with a faint iridescent ripple. Environment: Neon-lit urban alleyway at midnight, slick asphalt reflecting pink and blue signs. Framing: Medium close-up shot, camera slowly pushing in on Leo's focused expression and his hand touching the anomaly. Lighting: Moody neon rim lighting mixed with cool blue moonlight. Style: High-end contemporary 3D cinematic animation with rich textural details and atmospheric rain particles.",
+      "audio_prompt": "Natural ambience, clear dialogue and restrained cinematic score",
+      "continuity_notes": "Maintain established character appearance, props and screen direction"
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 8,
+      "location": "Unspecified location",
+      "characters": [],
+      "action": "A character advances the scene.",
+      "dialogue": [
+        {
+          "character": "Narrator",
+          "line": "No way..."
+        }
+      ],
+      "camera": "Cinematic medium shot with a slow, controlled camera move",
+      "visual_prompt": "Cinematic 3D animation. Subject: Leo, 24 years old, dark blonde hair, charcoal field jacket, dark grey hoodie. Action: Leo pushes his hand deeper; his arm sinks past the elbow into the solid brick wall as if it were liquid glass, creating ripples of golden light. Environment: The same damp urban alleyway at night. Framing: Over-the-shoulder medium shot looking past Leo's back toward the wall as his arm disappears into a blindingly bright, beautiful alternate landscape visible through the aperture. Lighting: Sudden harsh golden light spilling from the portal onto Leo's startled face. Style: High-end 3D cinematic animation with stark contrast between gritty urban reality and ethereal fantasy light.",
+      "audio_prompt": "Natural ambience, clear dialogue and restrained cinematic score",
+      "continuity_notes": "Maintain established character appearance, props and screen direction"
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 9,
+      "location": "Unspecified location",
+      "characters": [],
+      "action": "A character advances the scene.",
+      "dialogue": [],
+      "camera": "Cinematic medium shot with a slow, controlled camera move",
+      "visual_prompt": "Cinematic 3D animation. Subject: Leo, 24 years old, dark blonde hair, charcoal field jacket. Action: Pulled forward by an unseen magnetic tug, Leo stumbles completely through the shimmering brick wall, vanishing from the alley. Environment: The portal snaps shut instantly behind him, leaving the brick wall totally normal, dark, and wet in the empty rain-slicked alley. Framing: Wide static shot of the alleyway showing the sudden disappearance and the return of mundane reality. Lighting: Moody, solitary streetlamp illumination reflecting off puddles. Style: Cinematic 3D animation focusing on stark spatial transition.",
+      "audio_prompt": "Natural ambience, clear dialogue and restrained cinematic score",
+      "continuity_notes": "Maintain established character appearance, props and screen direction"
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 10,
+      "location": "Unspecified location",
+      "characters": [],
+      "action": "A character advances the scene.",
+      "dialogue": [
+        {
+          "character": "Narrator",
+          "line": "Okay. Definitely not downtown anymore."
+        }
+      ],
+      "camera": "Cinematic medium shot with a slow, controlled camera move",
+      "visual_prompt": "Cinematic 3D animation. Subject: Leo, 24 years old, dark blonde hair, charcoal field jacket, dark grey hoodie. Action: Leo crashes hard onto a massive, translucent sheet of glowing turquoise crystal that serves as the ground, sliding a few feet before catching himself and staring around in absolute awe. Environment: An incomprehensible fantasy realm where giant floating islands of white stone hover in a twilight sky filled with twin ringed moons; vast crystalline architectures stretch across the horizon. Framing: Wide panoramic tracking shot following Leo's bewildered gaze across the breathtaking landscape. Lighting: Ethereal turquoise glow from the crystalline ground mixed with soft violet twilight from the dual moons. Style: Rich, high-fantasy 3D animation with vast scale and hyper-detailed crystal refraction.",
+      "audio_prompt": "Natural ambience, clear dialogue and restrained cinematic score",
+      "continuity_notes": "Maintain established character appearance, props and screen direction"
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 8,
+      "location": "Unspecified location",
+      "characters": [],
+      "action": "A character advances the scene.",
+      "dialogue": [
+        {
+          "character": "Narrator",
+          "line": "And I don't think you're friendly."
+        }
+      ],
+      "camera": "Cinematic medium shot with a slow, controlled camera move",
+      "visual_prompt": "Cinematic 3D animation. Subject: Leo, 24 years old, dark blonde hair, charcoal field jacket, standing frozen on the glowing crystal plain. Action: A massive, sleek mechanical-organic entity resembling a winged hound with iridescent metallic scales and glowing amber optic veins steps out from behind a towering crystal spire, lowering its head to stare directly at Leo. Environment: Vast crystalline plain under twilight twin moons. Framing: Medium full shot framing Leo in the foreground looking tiny against the towering, majestic beast. Lighting: Pulsing amber light from the creature casting long shadows on the crystal ground. Style: Detailed cinematic 3D animation blending mechanical precision with organic fantasy creature design.",
+      "audio_prompt": "Natural ambience, clear dialogue and restrained cinematic score",
+      "continuity_notes": "Maintain established character appearance, props and screen direction"
+    }
+  ],
+  "ending_hook": "A new mystery remains unresolved.",
+  "next_episode_seeds": [],
+  "memory_update": {
+    "world_state": {},
+    "characters": [],
+    "open_mysteries": [],
+    "important_events": [],
+    "continuity_rules": [
+      "Keep recurring character identities and visual traits consistent.",
+      "Invent new characters, places and plotlines when narratively useful.",
+      "Maintain cause and effect across episodes.",
+      "Do not copy existing franchises or recognizable characters."
+    ],
+    "recent_episode_summaries": []
+  },
+  "generation_model": "gemini-3.5-flash-lite"
+}
