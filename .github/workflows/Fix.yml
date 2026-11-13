@@ -1,0 +1,17 @@
+name: Import ZIP Fix
+
+on: workflow_dispatch
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract ZIP
+        run: |
+          ls -la
+          ZIP=$(find . -name "*.zip" | head -n 1)
+          echo "ZIP: $ZIP"
+          unzip -o -q "$ZIP" -d /tmp/import
+          cp -a /tmp/import/. . 2>/dev/null || cp -a /tmp/import/*/. . 2>/dev/null || true
+          ls -la
