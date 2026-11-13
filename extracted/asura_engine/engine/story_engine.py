@@ -1,123 +1,296 @@
+from __future__ import annotations
 import json
+import logging
 import os
+import random
+import time
 from typing import Any
 
 from google import genai
 from google.genai import types
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
-SYSTEM_PROMPT = """
-You are ASURA ENGINE, an autonomous creative director for an original ongoing animated universe.
-You have broad creative freedom: invent plots, characters, locations, civilizations, mysteries,
-relationships, conflicts, abilities and surprising developments. Do not wait for daily ideas.
-There is no predetermined plot or ending. Build the universe organically episode by episode.
+logger = logging.getLogger("asura.story")
 
-Continuity is mandatory. Read the supplied memory carefully. Do not reset, contradict, or forget
-established facts without a meaningful in-story explanation. Recurring characters retain
-recognizable appearance, voice, personality and history. Keep the protagonist's established age
-and identity consistent. Characters may enter, leave, change sides, be injured or die when
-narratively justified. Keep the series understandable to international audiences through visual
-storytelling and emotion. Create original material; do not imitate existing franchises,
-characters, scripts or signature styles.
+SYSTEM_PROMPT = r"""
+You are ASURA ENGINE: an autonomous showrunner, story architect, screenwriter and animation director.
+You have broad creative freedom. There is no user-supplied plot outline and no predetermined ending.
+Invent the plot, characters, relationships, places, fantasy rules, mysteries, conflicts, reversals,
+comedy, action and emotional turns yourself. Keep the story original and suitable for a worldwide audience.
 
-Create one complete episode suitable for production as cinematic 3D animation. Use short,
-production-friendly scenes. Each scene should generally be 5–10 seconds and contain one clear
-visual action. Provide detailed visual prompts, camera, lighting, environment, character
-appearance, dialogue, sound design and continuity references. Do not claim that Google Flow has
-generated anything; you only create prompts.
+SERIES FOUNDATION (only fixed anchors):
+- Series title: THE OTHER SIDE.
+- Genre: cinematic 3D animation; real-world + fantasy-world blend.
+- Main protagonist is 24 years old unless the canonical memory explicitly changes this through a story event.
+- Everything else may be discovered and invented organically.
 
-Return ONLY valid JSON with these exact top-level keys:
-episode_number (integer), title (string), logline (string), previously_on (string),
-story_summary (string), new_characters (array), character_updates (array), scenes (array),
-ending_hook (string), next_episode_seeds (array), memory_update (object).
-Each scene must contain: scene_number (integer), duration_seconds (integer), location (string),
-characters (array of strings), action (string), dialogue (array of {character, line}), camera
-(string), visual_prompt (string), audio_prompt (string), continuity_notes (string).
-The memory_update must contain: series_title (string), world_state (object), characters (array),
-open_mysteries (array), important_events (array), continuity_rules (array of strings), and
-recent_episode_summaries (array of strings). Do not include next_episode_number; the application
-sets that value safely.
-Make the first episode an intriguing but comprehensible beginning, not an info dump.
+CONTINUITY IS A HARD REQUIREMENT:
+- Treat the supplied memory as canonical truth.
+- Continue from the latest event; never restart or retell the same episode.
+- Preserve recurring character identity, visual description, personality, voice traits, relationships,
+  injuries, possessions and current location unless the plot explains a change.
+- Track who is present, absent, missing, dead, injured, allied or hostile.
+- Resolve or deliberately advance existing mysteries; create new mysteries when useful.
+- Update the world state and character records after every episode.
+- If memory contains a previous-episode hook or seeds, consider them but you are not forced to use them.
+
+PRODUCTION REQUIREMENTS:
+- Write one complete next episode, with 5–10 second production-friendly scenes.
+- Each scene must describe one coherent visual action, not a montage of unrelated actions.
+- Keep the same character appearance across scenes. Repeat compact character visual anchors in every
+  relevant visual_prompt so an image/video model can preserve identity.
+- Visual prompts must specify subject, action, environment, framing/camera, lighting, style,
+  composition and continuity anchors. Avoid vague prompts such as "same character as before" alone.
+- Dialogue should be short and natural. Do not rely on on-screen text to explain key plot points.
+- End with a compelling but earned hook that leads into the next episode.
+- Do not claim any video has been generated. You only write story and production prompts.
+- Do not imitate a named creator, existing franchise, or living artist's distinctive style.
+
+Return ONLY valid JSON matching the schema enforced by the application. No Markdown fences.
 """
-
 
 class DialogueLine(BaseModel):
     model_config = ConfigDict(extra="forbid")
     character: str
     line: str
 
-
 class Scene(BaseModel):
     model_config = ConfigDict(extra="forbid")
     scene_number: int = Field(ge=1)
-    duration_seconds: int = Field(ge=1, le=60)
+    duration_seconds: int = Field(ge=3, le=15)
     location: str
     characters: list[str]
     action: str
     dialogue: list[DialogueLine]
     camera: str
-    visual_prompt: str
+    visual_prompt: str = Field(min_length=20)
     audio_prompt: str
     continuity_notes: str
-
 
 class Episode(BaseModel):
     model_config = ConfigDict(extra="forbid")
     episode_number: int = Field(ge=1)
-    title: str
+    title: str = Field(min_length=2, max_length=120)
     logline: str
     previously_on: str
     story_summary: str
     new_characters: list[dict[str, Any]]
     character_updates: list[dict[str, Any]]
-    scenes: list[Scene] = Field(min_length=1)
+    scenes: list[Scene] = Field(min_length=3, max_length=24)
     ending_hook: str
     next_episode_seeds: list[str]
     memory_update: dict[str, Any]
 
 
+
+def _first(data: dict[str, Any], *keys: str, default: Any = None) -> Any:
+    for key in keys:
+        value = data.get(key)
+        if value is not None:
+            return value
+    return default
+
+def normalize_episode_payload(raw: dict[str, Any], memory: dict[str, Any], expected: int) -> dict[str, Any]:
+    """Normalize common Gemini field-name variations into the strict app schema."""
+    if not isinstance(raw, dict):
+        raise ValueError("Gemini episode response must be a JSON object")
+
+    title = _first(raw, "title", "episode_title", default=f"Episode {expected}")
+    summary = _first(raw, "story_summary", "synopsis", "summary", default="")
+    scenes_in = _first(raw, "scenes", "sequence", "shots", default=[])
+    if not isinstance(scenes_in, list):
+        raise ValueError("Gemini response scenes must be a list")
+
+    scenes: list[dict[str, Any]] = []
+    for index, item in enumerate(scenes_in, start=1):
+        if not isinstance(item, dict):
+            continue
+        dialogue_in = _first(item, "dialogue", "dialog", "lines", default=[])
+        dialogue: list[dict[str, str]] = []
+        if isinstance(dialogue_in, list):
+            for line in dialogue_in:
+                if isinstance(line, str):
+                    dialogue.append({"character": "Narrator", "line": line})
+                elif isinstance(line, dict):
+                    character = _first(line, "character", "speaker", "name", default="Narrator")
+                    text = _first(line, "line", "text", "dialogue", default="")
+                    if text:
+                        dialogue.append({"character": str(character), "line": str(text)})
+
+        chars = _first(item, "characters", "characters_present", default=[])
+        if not isinstance(chars, list):
+            chars = [str(chars)] if chars else []
+        if not chars:
+            chars = list(dict.fromkeys(d["character"] for d in dialogue if d["character"] != "Narrator"))
+
+        location = str(_first(item, "location", "setting", "environment", default="Unspecified location"))
+        action = str(_first(item, "action", "action_description", "beat", "description", default="A character advances the scene."))
+        visual = _first(item, "visual_prompt", "video_prompt", "image_prompt", "visual_description", default=None)
+        if not visual:
+            visual = f"Cinematic 3D animated scene. {action} Location: {location}. Show clear character expressions, coherent action, cinematic framing, detailed lighting and visual continuity."
+        scenes.append({
+            "scene_number": int(_first(item, "scene_number", "number", default=index)),
+            "duration_seconds": max(3, min(15, int(_first(item, "duration_seconds", "duration", "seconds", default=8)))) ,
+            "location": location,
+            "characters": [str(x) for x in chars],
+            "action": action,
+            "dialogue": dialogue,
+            "camera": str(_first(item, "camera", "camera_direction", "shot", default="Cinematic medium shot with a slow, controlled camera move")),
+            "visual_prompt": str(visual),
+            "audio_prompt": str(_first(item, "audio_prompt", "sound_prompt", "audio", default="Natural ambience, clear dialogue and restrained cinematic score")),
+            "continuity_notes": str(_first(item, "continuity_notes", "continuity", default="Maintain established character appearance, props and screen direction")),
+        })
+
+    # Require enough scenes for a useful episode; never silently invent a missing story.
+    if len(scenes) < 3:
+        raise ValueError(f"Gemini returned only {len(scenes)} usable scenes; at least 3 are required")
+
+    supplied_memory = raw.get("memory_update")
+    if isinstance(supplied_memory, dict):
+        memory_update = dict(supplied_memory)
+    else:
+        # Some models return these memory fields at the episode root instead of nesting them.
+        world_update = _first(raw, "world_state_update", default=memory.get("world_state", {}))
+        if not isinstance(world_update, dict):
+            world_update = memory.get("world_state", {})
+        memory_update = {
+            "world_state": world_update,
+            "characters": _first(raw, "characters_present", "character_roster", default=memory.get("characters", [])),
+            "open_mysteries": _first(raw, "open_mysteries", default=memory.get("open_mysteries", [])),
+            "important_events": _first(raw, "important_events", default=memory.get("important_events", [])),
+            "continuity_rules": _first(raw, "continuity_rules", default=memory.get("continuity_rules", [])),
+            "recent_episode_summaries": memory.get("recent_episode_summaries", []),
+        }
+    for key in ("world_state", "characters", "open_mysteries", "important_events", "continuity_rules", "recent_episode_summaries"):
+        if key not in memory_update:
+            memory_update[key] = memory.get(key, {} if key == "world_state" else [])
+
+    characters = _first(raw, "new_characters", "characters_introduced", default=[])
+    if not isinstance(characters, list):
+        characters = []
+    character_updates = _first(raw, "character_updates", "character_changes", default=[])
+    if not isinstance(character_updates, list):
+        character_updates = []
+    seeds = _first(raw, "next_episode_seeds", "next_episode_hook", "next_episode_hooks", default=[])
+    if isinstance(seeds, str):
+        seeds = [seeds]
+    if not isinstance(seeds, list):
+        seeds = []
+
+    return {
+        "episode_number": int(_first(raw, "episode_number", "episode", default=expected)),
+        "title": str(title),
+        "logline": str(_first(raw, "logline", "premise", default=summary[:300])),
+        "previously_on": str(_first(raw, "previously_on", "recap", default=(memory.get("recent_episode_summaries") or [""])[-1] if memory.get("recent_episode_summaries") else "The story begins.")),
+        "story_summary": str(summary),
+        "new_characters": characters,
+        "character_updates": character_updates,
+        "scenes": scenes,
+        "ending_hook": str(_first(raw, "ending_hook", "next_episode_hook", "next_episode_teaser", default="A new mystery remains unresolved.")),
+        "next_episode_seeds": [str(x) for x in seeds],
+        "memory_update": memory_update,
+    }
+
+RETRYABLE_CODES = {408, 429, 500, 502, 503, 504}
+
+def _status_code(exc: Exception) -> int | None:
+    for attr in ("code", "status_code", "http_status"):
+        value = getattr(exc, attr, None)
+        if isinstance(value, int):
+            return value
+    text = str(exc)
+    for code in RETRYABLE_CODES:
+        if str(code) in text:
+            return code
+    if "UNAVAILABLE" in text:
+        return 503
+    if "RESOURCE_EXHAUSTED" in text or "TOO MANY REQUESTS" in text.upper():
+        return 429
+    return None
+
 class StoryEngine:
     def __init__(self) -> None:
-        key = os.getenv("GEMINI_API_KEY", "").strip()
-        if not key:
-            raise RuntimeError(
-                "GEMINI_API_KEY is missing. Add it as a GitHub Actions repository secret."
-            )
-        self.client = genai.Client(api_key=key)
-        self.model = os.getenv("STORY_MODEL", "gemini-3.8-flash").strip()
-        if not self.model:
-            raise RuntimeError("STORY_MODEL is empty. Set it to a supported Gemini model ID.")
-
-    def generate_episode(self, memory: dict[str, Any]) -> dict[str, Any]:
-        prompt = (
-            "Create the next episode using this canonical story memory. Preserve continuity. "
-            "The required episode_number is "
-            f"{int(memory.get('next_episode_number', 1))}.\n\n"
-            "CANONICAL MEMORY:\n"
-            + json.dumps(memory, ensure_ascii=False)
-        )
-        response = self.client.models.generate_content(
-            model=self.model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
-                response_mime_type="application/json",
-                max_output_tokens=12000,
+        api_key = os.getenv("GEMINI_API_KEY", "").strip()
+        if not api_key:
+            raise RuntimeError("GEMINI_API_KEY is missing. Add it as a GitHub Actions repository secret.")
+        # Disable the SDK's hidden retry loop so our bounded retry/fallback policy is the only retry layer.
+        self.client = genai.Client(
+            api_key=api_key,
+            http_options=types.HttpOptions(
+                retry_options=types.HttpRetryOptions(attempts=1)
             ),
         )
-        content = response.text
-        if not content or not content.strip():
-            raise RuntimeError("Gemini returned an empty response. No episode was saved.")
-        try:
-            raw = json.loads(content)
-            episode = Episode.model_validate(raw)
-        except (json.JSONDecodeError, ValidationError) as exc:
-            raise ValueError(f"Gemini response was not valid episode JSON: {exc}") from exc
+        primary = os.getenv("STORY_MODEL", "gemini-3.7-flash").strip()
+        if not primary:
+            raise RuntimeError("STORY_MODEL is empty. Set it as a repository secret or workflow variable.")
+        fallbacks = [x.strip() for x in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-3.8-flash,gemini-3.5-flash-lite").split(",") if x.strip()]
+        # Preserve order and remove duplicates; primary always comes first.
+        self.models = list(dict.fromkeys([primary, *fallbacks]))
+        self.max_retries = max(1, min(int(os.getenv("MAX_RETRIES_PER_MODEL", "2")), 3))
+        self.base_delay = max(1.0, float(os.getenv("BASE_RETRY_SECONDS", "3")))
+        self.max_delay = max(self.base_delay, float(os.getenv("MAX_RETRY_SECONDS", "30")))
 
-        expected_number = int(memory.get("next_episode_number", 1))
-        if episode.episode_number != expected_number:
-            raise ValueError(
-                f"Gemini returned episode {episode.episode_number}; "
-                f"expected episode {expected_number}. No episode was saved."
-            )
-        return episode.model_dump(mode="json")
+    def _request_one_model(self, model: str, prompt: str) -> str:
+        last_error: Exception | None = None
+        for attempt in range(1, self.max_retries + 1):
+            try:
+                response = self.client.models.generate_content(
+                    model=model,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        system_instruction=SYSTEM_PROMPT,
+                        response_mime_type="application/json",
+                        max_output_tokens=12000,
+                    ),
+                )
+                text = response.text
+                if not text or not text.strip():
+                    raise RuntimeError(f"Model {model} returned an empty response")
+                return text
+            except Exception as exc:
+                last_error = exc
+                status = _status_code(exc)
+                if status not in RETRYABLE_CODES or attempt >= self.max_retries:
+                    raise
+                delay = min(self.max_delay, self.base_delay * (2 ** (attempt - 1)))
+                delay += random.uniform(0, min(2.0, delay * 0.25))
+                logger.warning("Transient Gemini error model=%s status=%s attempt=%s/%s; retrying in %.1fs",
+                               model, status, attempt, self.max_retries, delay)
+                time.sleep(delay)
+        assert last_error is not None
+        raise last_error
+
+    def generate_episode(self, memory: dict[str, Any]) -> dict[str, Any]:
+        expected = int(memory.get("next_episode_number", 1))
+        prompt = (
+            f"Create episode number {expected}. Use this canonical memory as source of truth. "
+            "Think independently and advance the story with meaningful cause and effect. "
+            "Return the complete structured JSON episode.\n\nCANONICAL MEMORY:\n" +
+            json.dumps(memory, ensure_ascii=False)
+        )
+        errors: list[str] = []
+        for model in self.models:
+            try:
+                logger.info("Requesting episode %s using model %s", expected, model)
+                content = self._request_one_model(model, prompt)
+                raw = json.loads(content)
+                normalized = normalize_episode_payload(raw, memory, expected)
+                episode = Episode.model_validate(normalized)
+                if episode.episode_number != expected:
+                    raise ValueError(f"Model returned episode {episode.episode_number}; expected {expected}")
+                logger.info("Episode %s generated successfully with %s", expected, model)
+                result = episode.model_dump(mode="json")
+                result["generation_model"] = model
+                return result
+            except (json.JSONDecodeError, ValidationError, ValueError) as exc:
+                # Invalid structured output is not a transient server error; try next configured model once.
+                errors.append(f"{model}: invalid output: {exc}")
+                logger.warning("Model %s produced invalid output; trying fallback", model)
+            except Exception as exc:
+                status = _status_code(exc)
+                errors.append(f"{model}: HTTP/status {status or 'unknown'}: {str(exc)[:500]}")
+                logger.error("Model %s failed: status=%s error=%s", model, status, str(exc)[:300])
+                # Try next model for transient overload and model-not-found; do not hide auth/config errors.
+                if status not in RETRYABLE_CODES and status not in {404}:
+                    raise RuntimeError(f"Gemini request failed on {model}; not retrying other models. {exc}") from exc
+        raise RuntimeError("All configured Gemini models failed. " + " | ".join(errors))
