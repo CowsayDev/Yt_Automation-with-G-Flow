@@ -1,32 +1,56 @@
-# ASURA Engine — Gemini-powered animated-series story starter
+# ASURA Engine — closed-loop story generation core
 
-This repository generates one continuity-aware episode and scene-level Google Flow prompts per day using the Gemini API. It runs on GitHub Actions; no VPS is required.
+This update hardens the autonomous story-generation loop: canonical persistent memory, strict
+episode validation, bounded retry with exponential backoff + jitter, model fallback, atomic writes,
+unique episode numbering, and GitHub Actions persistence.
 
-## What works
-- Gemini-powered episode writing with JSON parsing and Pydantic validation.
-- Persistent JSON story memory, including the protagonist age and continuity rules.
-- Scene-by-scene visual and audio prompts for later use in Google Flow.
-- Daily GitHub Actions schedule (12:00 PM IST / 06:30 UTC) and manual runs.
-- Episode JSON and prompts committed to the repository.
+## Current working scope
+- Gemini text generation for one continuity-aware episode per run.
+- Model retry/fallback: primary is `STORY_MODEL`; fallbacks are configured in the workflow.
+- Structured JSON validation before saving.
+- Story memory only advances after episode and prompt files are written successfully.
+- Daily workflow at 12:00 PM Asia/Kolkata and manual dispatch.
 
-## Not implemented yet
-Google Flow browser automation/video generation and YouTube publishing are not implemented in this starter. Do not assume an episode JSON means a video has been rendered or uploaded. Google Flow UI automation can break when its UI changes and may require manual login verification; never bypass CAPTCHA or security controls.
+## Not yet in this build
+Google Flow browser generation and YouTube upload are NOT automated. The two integration folders
+contain the safe integration requirements only. Do not assume an MP4 is generated or published.
+The Flow UI can change and Google may require login/MFA/CAPTCHA; automation must not bypass security.
 
-## Setup
-1. Upload these files to a GitHub repository.
-2. In **Settings → Secrets and variables → Actions → Secrets**, add `GEMINI_API_KEY`.
-3. Optionally add repository variable `STORY_MODEL` with a model ID available to your Gemini API project. Default: `gemini-3.8-flash`.
-4. In **Actions**, run **ASURA Engine - Daily Episode → Run workflow** to test.
-5. Inspect `episodes/`, `prompts/`, and `AI_BRAIN/story_state.json`.
+## GitHub setup
+Repository Secrets:
+- `GEMINI_API_KEY`: your Google AI Studio API key.
+- `STORY_MODEL`: `gemini-3.7-flash` (or another model available to your API project).
 
-## Local test
-Copy `.env.example` to `.env`, add your key, then run:
+The workflow configures fallbacks `gemini-3.8-flash,gemini-3.5-flash-lite`. Model access and capacity
+are project/tier dependent; fallback does not guarantee availability or zero cost.
 
+## Update existing repository
+The existing project is under `extracted/asura_engine/`. Replace that folder's files with the
+contents of this ZIP's `asura_engine/` folder. Keep the repository-root workflow that runs from
+`extracted/asura_engine`; do not create a second competing daily workflow inside the nested folder.
+
+## Run locally
 ```bash
 python -m pip install -r requirements.txt
+cp .env.example .env  # edit locally; never commit .env
 python main.py
 ```
 
-Never commit `.env` or API keys. Gemini free-tier availability, model access, and quotas depend on the Google AI Studio project and its current limits. See https://ai.google.dev/gemini-api/docs/pricing and https://ai.google.dev/gemini-api/docs/rate-limits.
+## Story quality control (v3)
 
-The schedule creates story text and prompts only. GitHub Actions minutes/storage and Gemini quotas still apply.
+The story engine now normalizes common Gemini JSON aliases, builds a persistent character bible from explicit character records and named visual subjects, and runs deterministic scene-quality checks before saving an episode. If output fails schema or production checks, it makes one bounded repair request to the same model before moving to the configured fallback model. Story memory is still written only after a validated episode and its Flow prompt JSON are generated.
+
+Quality checks include concrete locations, specific visible actions, named visible characters, detailed scene prompts, sequential scene numbering, and distinct visual prompts. These checks are production guardrails, not a guarantee of artistic quality or live API availability.
+
+
+## Automatic episode reconciliation (permanent numbering fix)
+
+Before every generation, `engine.reconciliation` scans both `episodes/` and `prompts/`:
+- The next number is `max(story_state.next_episode_number, highest_saved_episode_or_prompt + 1)`.
+- If an episode JSON exists but its derived Flow prompt is missing, the prompt is rebuilt from that saved episode.
+- If a prompt exists without its source episode, or a saved JSON is corrupt/mismatched, the run stops safely instead of overwriting or guessing.
+- If memory is behind the newest saved episode, the newest episode's `memory_update` is used to recover canonical state.
+- A process-level file lock complements the GitHub Actions concurrency group.
+- Episode JSON and Flow prompts are atomically written before story memory advances.
+
+This is designed to recover from the previous failure mode where Episode 1 had been saved but `story_state.json` still requested Episode 1. It does not delete old episodes or force a hard-coded episode number.
