@@ -1,0 +1,46 @@
+ 
+name: Update ASURA Engine
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-engine:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract updated engine
+        run: |
+          set -euo pipefail
+
+          ZIP="asura_engine_closed_loop.zip"
+          test -f "$ZIP"
+
+          mkdir -p /tmp/asura-update
+          unzip -q "$ZIP" -d /tmp/asura-update
+
+          test -f /tmp/asura-update/asura_engine/main.py
+
+          cp -a /tmp/asura-update/asura_engine/. extracted/asura_engine/
+
+          rm -f "$ZIP"
+
+          find extracted/asura_engine -type d -name __pycache__ -prune -exec rm -rf {} +
+
+      - name: Commit updated engine
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update ASURA Engine closed loop"
+            git push
+          fi
