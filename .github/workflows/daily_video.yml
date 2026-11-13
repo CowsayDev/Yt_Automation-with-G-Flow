@@ -39,7 +39,7 @@ jobs:
       - name: Generate episode with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          STORY_MODEL: ${{ vars.STORY_MODEL }}
+          STORY_MODEL: ${{ secrets.STORY_MODEL }}
         run: python main.py
 
       - name: Save story memory and episodes
