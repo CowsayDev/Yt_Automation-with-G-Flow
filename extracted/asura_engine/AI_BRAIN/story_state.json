@@ -6,11 +6,11 @@
     "identity": "to be organically established in Episode 1"
   },
   "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
-  "next_episode_number": 3,
+  "next_episode_number": 4,
   "world_state": {
-    "current_location": "The Cinder Spire Balcony, Vaelen",
-    "portal_status": "Chicago apartment anchor temporarily frozen in obsidian glass",
-    "environmental_features": "Floating islands, twin red suns, purple atmosphere"
+    "current_location": "The Cinder Spire Core Shaft, Vaelen",
+    "portal_status": "Chicago apartment anchor completely destroyed by a Siphon Weaver scout drone; direct return path severed",
+    "environmental_features": "Hollow vertical spire shaft, descending automated iron cargo lift, amber bioluminescent lichen, sealed sky shutters"
   },
   "characters": [
     {
@@ -42,33 +42,46 @@
       "personality": "Pragmatic survivalist, secretive, mission-driven",
       "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
       "first_seen_episode": 2
+    },
+    {
+      "name": "Kaelen",
+      "age": 22,
+      "appearance": "Lean athletic build, copper skin, cropped black hair, brass flight goggles",
+      "clothing": "Patched chitin-plated flight duster, dark utility trousers",
+      "voice": "Brisk, irreverent, sharp-tongued",
+      "personality": "Street-smart scavenger, opportunistic, cautious ally",
+      "distinctive_prop": "Magnetic grapple gauntlet with glowing green induction coils",
+      "first_seen_episode": 3
     }
   ],
   "open_mysteries": [
     "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
-    "Who are 'they' that Orin warned would find the apartment anchor?",
-    "What is Orin's true connection to the dimensional tears bridging Earth and Vaelen?"
+    "Who are the Siphon Weavers and why are they actively tracking and destroying dimensional rifts?",
+    "How will Leo and Mira return to Earth now that the Cinder Spire anchor is annihilated?",
+    "What lies in the Lower Reaches beneath the Cinder Spire?"
   ],
   "important_events": [
-    "Leo spilled coffee that turned into glowing runes in his Chicago apartment.",
-    "Orin stepped through a dimensional tear and used a brass astrolabe to seal it into obsidian glass.",
-    "Orin transported Leo and Mira through the threshold to the Cinder Spire in Vaelen."
+    "Leo and Mira arrived at the Cinder Spire balcony overlooking Vaelen's twin red suns and floating isles.",
+    "Met Kaelen, an opportunistic sky scavenger who unlocked the inner spire descent gate.",
+    "A crystalline Siphon Weaver scout drone obliterated the obsidian anchor with a sonic beam, trapping the group in Vaelen.",
+    "The group plummeted down the core cargo lift into the Lower Reaches as the spire blast doors sealed above."
   ],
   "continuity_rules": [
     "Keep recurring character identities and visual traits consistent.",
     "Invent new characters, places and plotlines when narratively useful.",
     "Maintain cause and effect across episodes.",
-    "Do not copy existing franchises or recognizable characters."
+    "The Chicago anchor is destroyed; interdimensional return requires discovering an alternate crossing."
   ],
   "recent_episode_summaries": [
     "Episode 1: Leo encountered strange glass anomalies on a Chicago pavement, setting off a magical awakening.",
-    "Episode 2: Magical resonance breached Leo's apartment kitchen, leading to the arrival of Orin and a forced transit to the fantasy world of Vaelen.",
-    "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. A rugged traveler named Orin abruptly steps through a dimensional tear, uses a brass astrolabe to seal the breach in obsidian glass, and forces them across the threshold into the floating world of Vaelen, where twin red suns overlook an alien landscape."
+    "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. Orin steps through a dimensional tear, seals it in obsidian glass, and whisks them to the Cinder Spire in Vaelen.",
+    "Episode 3: On the Cinder Spire balcony, Leo and Mira encounter a scavenger named Kaelen just as a crystalline Siphon Weaver drone strikes, obliterating their obsidian return anchor and forcing the group down a plunge lift into the Spire's abyss.",
+    "Episode 3: Upon emerging onto the vertigo-inducing balcony of Vaelen's Cinder Spire, Leo and Mira confront their impossible displacement while Orin attempts to stabilize their fracturing dimensional anchor. When local scavenger Kaelen intervenes with a warning and unlocks the inner gate, a lethal Siphon Weaver crystalline drone dives from the storm clouds and obliterates the obsidian rift. With their return path to Chicago completely shattered, the quartet plunges down an iron cargo lift into the subterranean abyss of the Spire's Lower Reaches."
   ],
-  "last_episode_title": "The Threshold of Cinder",
-  "last_updated_utc": "2026-11-13T20:12:32.696453+00:00",
+  "last_episode_title": "The Glass Horizon",
+  "last_updated_utc": "2026-11-15T14:19:11.366911+00:00",
   "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
   "protagonist_age": 24,
   "last_reconciled_episode": 1,
-  "last_episode_generation_model": "gemini-3.5-flash-lite"
+  "last_episode_generation_model": "gemini-3.7-flash"
 }

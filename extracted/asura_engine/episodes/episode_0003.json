@@ -1,0 +1,238 @@
+{
+  "episode_number": 3,
+  "title": "The Glass Horizon",
+  "logline": "Upon emerging onto the vertigo-inducing balcony of Vaelen's Cinder Spire, Leo and Mira confront their impossible displacement while Orin attempts to stabilize their fracturing dimensional anchor. When local scavenger Kaelen intervenes with a warning and unlocks the inner gate, a lethal Siphon Weaver",
+  "previously_on": "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. A rugged traveler named Orin abruptly steps through a dimensional tear, uses a brass astrolabe to seal the breach in obsidian glass, and forces them across the threshold into the floating world of Vaelen, where twin red suns overlook an alien landscape.",
+  "story_summary": "Upon emerging onto the vertigo-inducing balcony of Vaelen's Cinder Spire, Leo and Mira confront their impossible displacement while Orin attempts to stabilize their fracturing dimensional anchor. When local scavenger Kaelen intervenes with a warning and unlocks the inner gate, a lethal Siphon Weaver crystalline drone dives from the storm clouds and obliterates the obsidian rift. With their return path to Chicago completely shattered, the quartet plunges down an iron cargo lift into the subterranean abyss of the Spire's Lower Reaches.",
+  "new_characters": [],
+  "character_updates": [],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 7,
+      "location": "The Cinder Spire Balcony, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin"
+      ],
+      "action": "Leo stumbles back from the balcony edge, clutching the stone balustrade in vertigo as twin red suns illuminate vast floating landmasses, while Mira hurriedly opens her notebook to sketch the horizon.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "This isn't Chicago. This isn't anywhere on Earth."
+        },
+        {
+          "character": "Mira",
+          "line": "Atmospheric pressure is normal, but the dual solar alignment... it's impossible."
+        }
+      ],
+      "camera": "Wide establishing shot starting on the vast purple sky and floating islands, tilting and tracking back to frame Leo, Mira, and Orin against the stone balustrade.",
+      "visual_prompt": "Cinematic 3D animation style. A massive stone gothic balcony jutting out into a lavender sky with two crimson suns over colossal floating rocky islands. Leo, 24, athletic build with messy dark hair, wearing a worn gray hoodie and dark jeans, grips a carved stone railing in shock. Mira, 26, amber eyes and tied-back dark hair in a teal trench coat, scribbles in a leather notebook. Behind them, Orin, 40, rugged silver-haired traveler in a heavy leather cloak, monitors a glowing slab of obsidian glass embedded in the stone archway. High contrast, atmospheric mist, cinematic depth of field. Character continuity anchor for Orin: Weathered skin, short silver hair, rugged traveler's build; Heavy leather traveler's cloak, reinforced boots.",
+      "audio_prompt": "Howling high-altitude wind, a deep ambient cosmic hum, rustling coat fabric, and the scratch of pencil on thick paper.",
+      "continuity_notes": "Direct continuation from Episode 2; Leo still wears his casual Earth clothes, Mira holds her archive notebook, and Orin stands guard near the sealed rift."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 8,
+      "location": "The Cinder Spire Balcony, Vaelen",
+      "characters": [
+        "Orin",
+        "Leo",
+        "Mira"
+      ],
+      "action": "The obsidian rift emits a rhythmic crystalline pinging sound; Orin taps his brass astrolabe against it, scowling as hairline fractures of azure light ripple through the glass.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "Quiet down. The anchor is already vibrating. The Siphon Weavers track dimensional displacement."
+        },
+        {
+          "character": "Leo",
+          "line": "Then send us back before whatever they are shows up!"
+        }
+      ],
+      "camera": "Medium close-up orbiting Orin as his hand adjusts the concentric brass rings of the astrolabe, cutting to an over-the-shoulder view of the obsidian glass cracking.",
+      "visual_prompt": "Cinematic 3D animation style. Orin, 40, weathered face with silver stubble and sharp grey eyes, manipulating a complex concentric brass astrolabe that emits amber light pulses. In front of him, a jagged six-foot slab of glassy black obsidian set in an ancient carved archway begins cracking with vibrant electric-blue energy fissures. In the background, Leo gestures urgently in his gray hoodie while Mira stands watchful. Golden-hour crimson rim lighting, sharp textural detail on cracked glass and polished brass. Character continuity anchor for Mira: Sharp amber eyes, tied-back dark hair, focused expression; Teal trench coat over practical urban wear.",
+      "audio_prompt": "Resonant metallic clicks of the astrolabe, a high-pitched crystal pinging rhythm, and the sharp sound of glass micro-fracturing.",
+      "continuity_notes": "The obsidian seal created in Episode 2 is now unstable; Orin's astrolabe shows signs of strain."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 7,
+      "location": "The Cinder Spire Balcony Gate, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "A hooded young scavenger drops down from an overhead archway onto the balcony balustrade, aiming a magnetized grapple gauntlet at the locked bronze spire door.",
+      "dialogue": [
+        {
+          "character": "Kaelen",
+          "line": "You brought an unshielded tear right above the Spire's exhaust? You're either suicidal or fresh out of the Well."
+        },
+        {
+          "character": "Orin",
+          "line": "Lower that grapple, scavenger, or lose the wrist."
+        }
+      ],
+      "camera": "Low-angle dynamic shot tracking the figure landing crouched on the parapet, followed by a quick pan across the tense standoff between Orin and Kaelen.",
+      "visual_prompt": "Cinematic 3D animation style. Kaelen, 22, lean and agile with copper skin, cropped black hair, brass flight goggles pushed up on his forehead, wearing a patched chitin-plated flight duster and dark utility trousers. On his right forearm is a complex magnetic brass-and-copper grapple gauntlet with coils glowing pale green. He balances perched on a carved gargoyle balustrade, facing Orin who draws a defensive posture, while Leo and Mira step back cautiously into the shadow of the spire. Character continuity anchor for Orin: Weathered skin, short silver hair, rugged traveler's build; Heavy leather traveler's cloak, reinforced boots.",
+      "audio_prompt": "Heavy thud of boots landing on stone, mechanical whir of a magnetized winch spooling down, and sharp wind gusts.",
+      "continuity_notes": "First appearance of Kaelen; introduces a local survivor knowledgeable about the Siphon Weavers and the geography of Vaelen."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 8,
+      "location": "The Cinder Spire Balcony Gate, Vaelen",
+      "characters": [
+        "Kaelen",
+        "Mira",
+        "Leo"
+      ],
+      "action": "Kaelen fires a magnetic burst from his gauntlet into the massive bronze lock of the inner spire gate, releasing heavy counterweights that grind the door open.",
+      "dialogue": [
+        {
+          "character": "Kaelen",
+          "line": "I'm cracking this gate because the Weaver scout is sixty seconds out. If I save your skins, I get salvage rights to your off-world gear."
+        },
+        {
+          "character": "Mira",
+          "line": "Agreed on passage, non-negotiable on our gear. Move!"
+        }
+      ],
+      "camera": "Fast tracking shot from Kaelen's gauntlet firing a green electric bolt to the bronze lock mechanism violently disengaging and heavy chains pulling open the door.",
+      "visual_prompt": "Cinematic 3D animation style. A grand weathered bronze door adorned with ancient geometric engravings groans open, revealing a dark descending stone stairwell lit by faint amber bioluminescent lichen. Kaelen, copper-skinned in his chitin-armored duster, operates his glowing grapple gauntlet with practiced ease. Mira, decisive in her teal trench coat, motions Leo through the opening, while Leo looks warily back at Kaelen. Dynamic green and purple lighting contrast. Character continuity anchor for Leo: Messy dark hair, expressive eyes, athletic build; Worn gray hoodie, dark jeans, canvas sneakers.",
+      "audio_prompt": "Electric discharge crackle, heavy iron gears grinding against stone, chains rattling under immense tension.",
+      "continuity_notes": "Kaelen demonstrates his utility and streetwise nature; Mira takes decisive charge of negotiation."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 8,
+      "location": "The Cinder Spire Balcony, Vaelen",
+      "characters": [
+        "Leo",
+        "Orin"
+      ],
+      "action": "A geometric crystalline aerial drone screams down from the purple clouds and fires a sonic beam that shatters the obsidian anchor into fine black dust, nearly blasting Leo off his feet.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "Orin, the doorway—it's gone!"
+        },
+        {
+          "character": "Orin",
+          "line": "Down the shaft, now! Don't look back!"
+        }
+      ],
+      "camera": "Dramatic Dutch tilt tracking the crystalline prism drone diving overhead, cutting to a wide explosion of obsidian fragments and Orin grabbing Leo by the collar into the doorway.",
+      "visual_prompt": "Cinematic 3D animation style. A floating, faceted crystalline prism drone with an ominous glowing red core plunges from purple storm clouds. A blinding beam of harmonic white energy strikes the obsidian anchor slab in the archway, causing it to detonate into thousands of sparkling black glass particles and blue energy rings. Leo, caught in the shockwave with his gray hoodie whipping back, stumbles into the doorway as Orin yanks him through. Volumetric smoke, glass debris, and intense lighting flares. Character continuity anchor for Orin: Weathered skin, short silver hair, rugged traveler's build; Heavy leather traveler's cloak, reinforced boots.",
+      "audio_prompt": "Deafening supersonic diving whistle, concussive harmonic beam detonation, exploding glass shower, and Orin's desperate yell.",
+      "continuity_notes": "The obsidian rift to Chicago is totally destroyed; Leo and Mira have no immediate route back home."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 8,
+      "location": "The Cinder Spire Core Shaft, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "The four characters leap onto a rusted circular cargo lift that plummets into the fathomless vertical core of the Spire as heavy metal blast shutters slam shut above them.",
+      "dialogue": [
+        {
+          "character": "Kaelen",
+          "line": "Hold on to something! The Lower Reaches don't have guardrails!"
+        },
+        {
+          "character": "Leo",
+          "line": "Where does this thing go?!"
+        }
+      ],
+      "camera": "Extreme low-angle looking straight up from the dark abyss as the lift plunges toward the camera, the circular aperture of twin red suns sealing shut far above.",
+      "visual_prompt": "Cinematic 3D animation style. A massive, circular open-grate iron lift descending rapidly down an immense cylindrical hollow stone tower. Amber lichen and glowing bronze pipes line the colossal inner walls. Leo, Mira, Orin, and Kaelen hold tightly onto the rusted central pillar of the lift. Far above, circular stone iris shutters snap shut with sparks, cutting off the crimson sunlight of Vaelen and plunging the scene into dramatic amber shadow and motion blur. Character continuity anchor for Orin: Weathered skin, short silver hair, rugged traveler's build; Heavy leather traveler's cloak, reinforced boots.",
+      "audio_prompt": "Screech of heavy steel cables and lift brake shoes, the massive boom of stone blast shutters locking, and rushing wind echoing down a deep shaft.",
+      "continuity_notes": "Cliffhanger ending; the rift to Chicago is severed, and the group is plunged into the uncharted lower core of the Spire with their new guide."
+    }
+  ],
+  "ending_hook": "With their only pathway back to Earth pulverized into black dust, Leo, Mira, and Orin plummet down the darkened Spire shaft at the mercy of an opportunistic stranger, while the harmonic shrieks of the Siphon Weaver swarm circle directly above the sealing blast doors.",
+  "next_episode_seeds": [],
+  "memory_update": {
+    "world_state": {
+      "current_location": "The Cinder Spire Core Shaft, Vaelen",
+      "portal_status": "Chicago apartment anchor completely destroyed by a Siphon Weaver scout drone; direct return path severed",
+      "environmental_features": "Hollow vertical spire shaft, descending automated iron cargo lift, amber bioluminescent lichen, sealed sky shutters"
+    },
+    "characters": [
+      {
+        "name": "Leo",
+        "age": 24,
+        "appearance": "Messy dark hair, expressive eyes, athletic build",
+        "clothing": "Worn gray hoodie, dark jeans, canvas sneakers",
+        "voice": "Casual, grounded, increasingly bewildered",
+        "personality": "Inquisitive, reluctant hero, quick to react",
+        "distinctive_prop": "Cracked porcelain coffee mug fragments in his apartment",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Mira",
+        "age": 26,
+        "appearance": "Sharp amber eyes, tied-back dark hair, focused expression",
+        "clothing": "Teal trench coat over practical urban wear",
+        "voice": "Analytical, sharp, knowledgeable",
+        "personality": "Cautious scholar, resourceful, protective",
+        "distinctive_prop": "Leather-bound archive notebook",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Orin",
+        "age": 40,
+        "appearance": "Weathered skin, short silver hair, rugged traveler's build",
+        "clothing": "Heavy leather traveler's cloak, reinforced boots",
+        "voice": "Gravelly, urgent, authoritative",
+        "personality": "Pragmatic survivalist, secretive, mission-driven",
+        "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Kaelen",
+        "age": 22,
+        "appearance": "Lean athletic build, copper skin, cropped black hair, brass flight goggles",
+        "clothing": "Patched chitin-plated flight duster, dark utility trousers",
+        "voice": "Brisk, irreverent, sharp-tongued",
+        "personality": "Street-smart scavenger, opportunistic, cautious ally",
+        "distinctive_prop": "Magnetic grapple gauntlet with glowing green induction coils",
+        "first_seen_episode": 3
+      }
+    ],
+    "open_mysteries": [
+      "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
+      "Who are the Siphon Weavers and why are they actively tracking and destroying dimensional rifts?",
+      "How will Leo and Mira return to Earth now that the Cinder Spire anchor is annihilated?",
+      "What lies in the Lower Reaches beneath the Cinder Spire?"
+    ],
+    "important_events": [
+      "Leo and Mira arrived at the Cinder Spire balcony overlooking Vaelen's twin red suns and floating isles.",
+      "Met Kaelen, an opportunistic sky scavenger who unlocked the inner spire descent gate.",
+      "A crystalline Siphon Weaver scout drone obliterated the obsidian anchor with a sonic beam, trapping the group in Vaelen.",
+      "The group plummeted down the core cargo lift into the Lower Reaches as the spire blast doors sealed above."
+    ],
+    "continuity_rules": [
+      "Keep recurring character identities and visual traits consistent.",
+      "Invent new characters, places and plotlines when narratively useful.",
+      "Maintain cause and effect across episodes.",
+      "The Chicago anchor is destroyed; interdimensional return requires discovering an alternate crossing."
+    ],
+    "recent_episode_summaries": [
+      "Episode 1: Leo encountered strange glass anomalies on a Chicago pavement, setting off a magical awakening.",
+      "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. Orin steps through a dimensional tear, seals it in obsidian glass, and whisks them to the Cinder Spire in Vaelen.",
+      "Episode 3: On the Cinder Spire balcony, Leo and Mira encounter a scavenger named Kaelen just as a crystalline Siphon Weaver drone strikes, obliterating their obsidian return anchor and forcing the group down a plunge lift into the Spire's abyss.",
+      "Episode 3: Upon emerging onto the vertigo-inducing balcony of Vaelen's Cinder Spire, Leo and Mira confront their impossible displacement while Orin attempts to stabilize their fracturing dimensional anchor. When local scavenger Kaelen intervenes with a warning and unlocks the inner gate, a lethal Siphon Weaver crystalline drone dives from the storm clouds and obliterates the obsidian rift. With their return path to Chicago completely shattered, the quartet plunges down an iron cargo lift into the subterranean abyss of the Spire's Lower Reaches."
+    ]
+  },
+  "generation_model": "gemini-3.7-flash"
+}
