@@ -1,0 +1,149 @@
+{
+  "series": "THE OTHER SIDE",
+  "episode": 4,
+  "title": "Descent to the Chasm",
+  "character_reference_notes": [
+    {
+      "name": "Leo",
+      "age": 24,
+      "appearance": "Messy dark hair, expressive eyes, athletic build",
+      "clothing": "Worn gray hoodie, dark jeans, canvas sneakers",
+      "voice": "Casual, grounded, increasingly bewildered",
+      "personality": "Inquisitive, reluctant hero, quick to react",
+      "distinctive_prop": "Cracked porcelain coffee mug fragments in his apartment",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Mira",
+      "age": 26,
+      "appearance": "Sharp amber eyes, tied-back dark hair, focused expression",
+      "clothing": "Teal trench coat over practical urban wear",
+      "voice": "Analytical, sharp, knowledgeable",
+      "personality": "Cautious scholar, resourceful, protective",
+      "distinctive_prop": "Leather-bound archive notebook",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Orin",
+      "age": 40,
+      "appearance": "Weathered skin, short silver hair, rugged traveler's build",
+      "clothing": "Heavy leather traveler's cloak, reinforced boots",
+      "voice": "Gravelly, urgent, authoritative",
+      "personality": "Pragmatic survivalist, secretive, mission-driven",
+      "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Kaelen",
+      "age": 22,
+      "appearance": "Lean athletic build, copper skin, cropped black hair, brass flight goggles",
+      "clothing": "Patched chitin-plated flight duster, dark utility trousers",
+      "voice": "Brisk, irreverent, sharp-tongued",
+      "personality": "Street-smart scavenger, opportunistic, cautious ally",
+      "distinctive_prop": "Magnetic grapple gauntlet with glowing green induction coils",
+      "first_seen_episode": 3
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 6,
+      "location": "The Cinder Spire Descent Lift, Lower Reaches, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "The automated iron cargo lift violently decelerates inside the vertical dark shaft, sending metallic screeches echoing. Leo stumbles against the iron railing, clutching his head, while Orin grips his brass astrolabe as gear wheels spark furiously in the gloom.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "Tell me this thing has a brake pedal. That drop felt like falling off the edge of the world."
+        },
+        {
+          "character": "Orin",
+          "line": "The lift isn't broken, Leo. The descent field is reacting to the drone's residue above us. Hold your positions."
+        }
+      ],
+      "camera": "Medium tracking shot facing inward, shaking violently to mimic the lift's sudden jolt, with amber bioluminescent lichen flashing on the damp stone walls behind them.",
+      "visual_prompt": "Cinematic 3D animation. Leo (24, messy dark hair, worn gray hoodie, dark jeans, canvas sneakers), Mira (26, sharp amber eyes, tied-back dark hair, teal trench coat), Orin (40, silver hair, heavy leather traveler's cloak, brass astrolabe), and Kaelen (22, cropped black hair, patched chitin flight duster, magnetic grapple gauntlet) stand inside a rusted iron cargo lift cage. The shaft walls glow with dim amber bioluminescence. Moody, high-contrast lighting, realistic textures, cinematic composition. Character continuity anchor for Kaelen: Lean athletic build, copper skin, cropped black hair, brass flight goggles; Patched chitin-plated flight duster, dark utility trousers.",
+      "audio_prompt": "Loud metallic grinding, sudden screech of decelerating brakes, echoes in a hollow stone shaft, tense ambient low-frequency hum.",
+      "continuity_notes": "The group has just plummeted down the lift shaft after the Chicago anchor was destroyed in Episode 3. All characters are present and uninjured but shaken."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 7,
+      "location": "The Cinder Spire Descent Lift, Lower Reaches, Vaelen",
+      "characters": [
+        "Mira",
+        "Kaelen"
+      ],
+      "action": "Mira kneels by the lift control panel, shining a pocket flashlight over scorched rune-carved circuits. Kaelen steps up beside her, his magnetic grapple gauntlet humming with green light as he taps the manual override casing.",
+      "dialogue": [
+        {
+          "character": "Mira",
+          "line": "The local transit circuits are fused. Whatever that Siphon drone fired, it wasn't just a physical shockwave."
+        },
+        {
+          "character": "Kaelen",
+          "line": "No kidding. It's mana-corrosion. If we stay in this shaft, the whole locking mechanism will drop us straight into the lava vaults."
+        }
+      ],
+      "camera": "Close-up over Mira's shoulder tracking down to the sparking console, then panning up to Kaelen's focused face lit by the green glow of his gauntlet.",
+      "visual_prompt": "Cinematic 3D animation. Mira (26, sharp amber eyes, tied-back dark hair, teal trench coat) kneeling beside a smoking iron control box, inspecting glowing blue and violet rune circuits. Kaelen (22, cropped black hair, patched chitin flight duster) stands beside her, holding his arm forward so the green induction coils of his magnetic grapple gauntlet illuminate the panel. Moody, industrial fantasy lighting, sharp focus, detailed textures. Character continuity anchor for Kaelen: Lean athletic build, copper skin, cropped black hair, brass flight goggles; Patched chitin-plated flight duster, dark utility trousers.",
+      "audio_prompt": "Electrical buzzing, sharp static crackle, low metallic hum of the inactive lift platform.",
+      "continuity_notes": "Establishes the lingering magical damage caused by the Siphon Weaver scout drone from Episode 3."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 6,
+      "location": "The Cinder Spire Maintenance Dock, Lower Reaches, Vaelen",
+      "characters": [
+        "Orin",
+        "Leo"
+      ],
+      "action": "Orin forcefully wrenches open the rusted heavy hatch at the back of the lift car. Leo steps past him, peering out into an enormous cavern filled with floating obsidian pylons and cascading blue waterfalls.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "Lift's dead. We exit here into the maintenance dock. Watch your step—this level hasn't seen maintenance in a century."
+        },
+        {
+          "character": "Leo",
+          "line": "So... no stairs back up to Chicago, right? Just endless ruins."
+        }
+      ],
+      "camera": "Wide tracking shot moving from inside the cramped lift cage outward into the sweeping subterranean cavern, revealing massive scale and distant glowing structures.",
+      "visual_prompt": "Cinematic 3D animation. Orin (40, silver hair, heavy leather traveler's cloak) pulls open a heavy bulkhead door, revealing Leo (24, worn gray hoodie, dark jeans) stepping out onto a vast stone platform. Beyond them lies a colossal underground cavern featuring floating obsidian architectural fragments, subterranean waterfalls, and glowing blue spore mists. Epic wide composition, dramatic atmospheric lighting, high-end 3D cinematic style. Character continuity anchor for Leo: Messy dark hair, expressive eyes, athletic build; Worn gray hoodie, dark jeans, canvas sneakers.",
+      "audio_prompt": "Heavy metal door groaning open, distant echoing wind in a vast cavern, soft rushing water sound.",
+      "continuity_notes": "Transition from the confined lift shaft into the expansive subterranean Lower Reaches of Vaelen."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 6,
+      "location": "The Cinder Spire Maintenance Dock, Lower Reaches, Vaelen",
+      "characters": [
+        "Mira",
+        "Orin",
+        "Kaelen",
+        "Leo"
+      ],
+      "action": "Kaelen points his magnetic gauntlet toward a distant suspended cable-car rail across the chasm. Mira consults her leather-bound notebook while Orin scans the shadows with a stern, protective gaze.",
+      "dialogue": [
+        {
+          "character": "Kaelen",
+          "line": "If we want out of the depths before the Siphon pack catches our scent, we take that transit line to the Silt Docks."
+        },
+        {
+          "character": "Mira",
+          "line": "According to these archive notes, the Silt Docks might house an unanchored transport vessel. It's our only viable path."
+        }
+      ],
+      "camera": "Medium group shot framed against the massive subterranean backdrop, panning slightly as Kaelen gestures toward the distant glowing cable line.",
+      "visual_prompt": "Cinematic 3D animation. Leo (worn gray hoodie), Mira (teal trench coat, holding leather-bound notebook), Orin (heavy leather traveler's cloak), and Kaelen (chitin flight duster) gathered on a damp stone dock overlooking an abyss. Kaelen points off-screen toward a glowing rail line. Atmospheric mist, cool blue and warm amber lighting contrasting, detailed character models, cinematic depth of field. Character continuity anchor for Leo: Messy dark hair, expressive eyes, athletic build; Worn gray hoodie, dark jeans, canvas sneakers.",
+      "audio_prompt": "Subterranean wind howling softly, distant mechanical clacking of old transit cables.",
+      "continuity_notes": "The group formulates their next objective: reaching the Silt Docks via the suspended cable line."
+    }
+  ]
+}

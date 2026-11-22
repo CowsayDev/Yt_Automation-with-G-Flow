@@ -6,11 +6,11 @@
     "identity": "to be organically established in Episode 1"
   },
   "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
-  "next_episode_number": 4,
+  "next_episode_number": 5,
   "world_state": {
-    "current_location": "The Cinder Spire Core Shaft, Vaelen",
+    "current_location": "The Cinder Spire Maintenance Dock, Lower Reaches, Vaelen",
     "portal_status": "Chicago apartment anchor completely destroyed by a Siphon Weaver scout drone; direct return path severed",
-    "environmental_features": "Hollow vertical spire shaft, descending automated iron cargo lift, amber bioluminescent lichen, sealed sky shutters"
+    "environmental_features": "Subterranean cavern, floating obsidian pylons, cascading blue waterfalls, rusted transit rail line, amber bioluminescence"
   },
   "characters": [
     {
@@ -58,13 +58,14 @@
     "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
     "Who are the Siphon Weavers and why are they actively tracking and destroying dimensional rifts?",
     "How will Leo and Mira return to Earth now that the Cinder Spire anchor is annihilated?",
-    "What lies in the Lower Reaches beneath the Cinder Spire?"
+    "What secrets are hidden in the Silt Docks beyond the Lower Reaches chasm?"
   ],
   "important_events": [
     "Leo and Mira arrived at the Cinder Spire balcony overlooking Vaelen's twin red suns and floating isles.",
     "Met Kaelen, an opportunistic sky scavenger who unlocked the inner spire descent gate.",
     "A crystalline Siphon Weaver scout drone obliterated the obsidian anchor with a sonic beam, trapping the group in Vaelen.",
-    "The group plummeted down the core cargo lift into the Lower Reaches as the spire blast doors sealed above."
+    "The group plummeted down the core cargo lift into the Lower Reaches as the spire blast doors sealed above.",
+    "Exited the stalled lift into the maintenance docks of the Lower Reaches, setting a course for the Silt Docks via an abandoned cable transit line."
   ],
   "continuity_rules": [
     "Keep recurring character identities and visual traits consistent.",
@@ -76,12 +77,13 @@
     "Episode 1: Leo encountered strange glass anomalies on a Chicago pavement, setting off a magical awakening.",
     "Episode 2: Leo and Mira witness magical resonance breach their Chicago apartment kitchen when spilled coffee turns into glowing runes. Orin steps through a dimensional tear, seals it in obsidian glass, and whisks them to the Cinder Spire in Vaelen.",
     "Episode 3: On the Cinder Spire balcony, Leo and Mira encounter a scavenger named Kaelen just as a crystalline Siphon Weaver drone strikes, obliterating their obsidian return anchor and forcing the group down a plunge lift into the Spire's abyss.",
-    "Episode 3: Upon emerging onto the vertigo-inducing balcony of Vaelen's Cinder Spire, Leo and Mira confront their impossible displacement while Orin attempts to stabilize their fracturing dimensional anchor. When local scavenger Kaelen intervenes with a warning and unlocks the inner gate, a lethal Siphon Weaver crystalline drone dives from the storm clouds and obliterates the obsidian rift. With their return path to Chicago completely shattered, the quartet plunges down an iron cargo lift into the subterranean abyss of the Spire's Lower Reaches."
+    "Episode 4: Trapped in the Lower Reaches after the lift stalls from mana-corrosion, Leo, Mira, Orin, and Kaelen breach the maintenance dock and plan to cross the subterranean chasm via an old transit rail toward the Silt Docks.",
+    "Episode 4: Following the destruction of their Chicago anchor by a Siphon drone, Leo, Mira, Orin, and Kaelen plunge down a collapsing cargo lift into the Lower Reaches of Vaelen. Escaping the stalled car through a maintenance bulkhead, the group braves the ancient docks and prepares to cross a subterranean chasm on a suspended transit line, only to discover that the dark waters below conceal predatory crystalline threats."
   ],
-  "last_episode_title": "The Glass Horizon",
-  "last_updated_utc": "2026-11-15T14:19:11.366911+00:00",
+  "last_episode_title": "Descent to the Chasm",
+  "last_updated_utc": "2026-11-22T14:51:06.324855+00:00",
   "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
   "protagonist_age": 24,
   "last_reconciled_episode": 1,
-  "last_episode_generation_model": "gemini-3.7-flash"
+  "last_episode_generation_model": "gemini-3.5-flash-lite"
 }
