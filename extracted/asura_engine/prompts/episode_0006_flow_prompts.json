@@ -1,0 +1,192 @@
+{
+  "series": "THE OTHER SIDE",
+  "episode": 6,
+  "title": "The Cartel's Toll",
+  "character_reference_notes": [
+    {
+      "name": "Leo",
+      "age": 24,
+      "appearance": "Messy dark hair, expressive eyes, athletic build",
+      "clothing": "Worn gray hoodie, dark jeans, canvas sneakers",
+      "voice": "Casual, grounded, increasingly bewildered",
+      "personality": "Inquisitive, reluctant hero, quick to react",
+      "distinctive_prop": "Cracked porcelain coffee mug fragments in his apartment",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Mira",
+      "age": 26,
+      "appearance": "Sharp amber eyes, tied-back dark hair, focused expression",
+      "clothing": "Teal trench coat over practical urban wear",
+      "voice": "Analytical, sharp, knowledgeable",
+      "personality": "Cautious scholar, resourceful, protective",
+      "distinctive_prop": "Leather-bound archive notebook",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Orin",
+      "age": 40,
+      "appearance": "Weathered skin, short silver hair, rugged traveler's build",
+      "clothing": "Heavy leather traveler's cloak, reinforced boots",
+      "voice": "Gravelly, urgent, authoritative",
+      "personality": "Pragmatic survivalist, secretive, mission-driven",
+      "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
+      "first_seen_episode": 2
+    },
+    {
+      "name": "Kaelen",
+      "age": 22,
+      "appearance": "Lean athletic build, copper skin, cropped black hair, brass flight goggles",
+      "clothing": "Patched chitin-plated flight duster, dark utility trousers",
+      "voice": "Brisk, irreverent, sharp-tongued",
+      "personality": "Street-smart scavenger, opportunistic, cautious ally",
+      "distinctive_prop": "Magnetic grapple gauntlet with glowing green induction coils",
+      "first_seen_episode": 3
+    },
+    {
+      "name": "A small",
+      "first_seen_episode": 5,
+      "appearance": "rusted open-air transit car carrying Leo, Mira, Orin, and Kaelen along a single suspended rail"
+    },
+    {
+      "name": "Varn",
+      "age": 45,
+      "appearance": "Massive brute, scarred ceramic jaw plate, heavy-set frame",
+      "clothing": "Heavy iron-plated Cartel work vest, reinforced utility belt",
+      "voice": "Gruff, commanding, menacing",
+      "personality": "Ruthless enforcer, territorial, greedy",
+      "distinctive_prop": "Hydraulic metal arm servos and shock-pike",
+      "first_seen_episode": 6
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 7,
+      "location": "The Silt Docks, Lower Reaches, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "The rusted transit car grinds to a halt against a rusted bumper at the edge of the Silt Docks platform. Leo, wearing his worn gray hoodie and dark jeans, scrambles out first, pulling Mira (in her teal trench coat) clear of the steaming wreckage. Orin and Kaelen vault out behind them, taking cover behind stacked crates of grey salt as heavy heavy-gauge spotlight beams sweep across the foggy dock.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "Tell me we're not dead. Because this place smells worse than death."
+        },
+        {
+          "character": "Kaelen",
+          "line": "Quiet, outlander. The Dredge Cartel doesn't welcome crash-landers with tea. Keep your heads down."
+        }
+      ],
+      "camera": "Medium tracking shot pushing in from the wreckage to the characters diving behind salt crates, handheld movement, cinematic depth of field.",
+      "visual_prompt": "Subject: Leo (24, messy dark hair, worn gray hoodie, dark jeans), Mira (26, amber eyes, teal trench coat), Orin (40, silver hair, heavy leather traveler's cloak), and Kaelen (22, copper skin, copper flight goggles, patched chitin-plated flight duster). Action: Crouching behind rusted salt crates as bright industrial spotlights sweep across the foggy, stagnant subterranean dock. Environment: The Silt Docks, towering iron cranes, gray water. Camera: Medium shot, slight handheld wobble. Lighting: Moody orange and harsh white industrial floodlights cutting through thick teal-gray fog. Style: High-end cinematic 3D animation, rich textures, volumetric lighting. Character continuity anchor for Kaelen: Lean athletic build, copper skin, cropped black hair, brass flight goggles; Patched chitin-plated flight duster, dark utility trousers.",
+      "audio_prompt": "Screeching metal of the crashed car, hissing steam valves, sweeping heavy spotlight hum, distant rough shouts in an alien dialect.",
+      "continuity_notes": "Leo is exhausted and bewildered; transit car is wrecked behind them."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 8,
+      "location": "Foreman's Checkpoint, The Silt Docks, Vaelen",
+      "characters": [
+        "Orin",
+        "Kaelen",
+        "Varn"
+      ],
+      "action": "Orin steps out from behind the crates, raising his hands slowly to show he is unarmed while holding his brass astrolabe. A towering Cartel enforcer named Varn—a heavily augmented brawler with hydraulic arm servos and a scarred ceramic jaw—approaches, flanked by two armed thugs holding crackling shock-pikes.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "We seek passage through the lower locks, foreman. No trouble, just transit."
+        },
+        {
+          "character": "Varn",
+          "line": "Transit costs coin, old man. And unregistered outlanders riding unauthorized rails... that costs your gear."
+        }
+      ],
+      "camera": "Low-angle medium close-up focusing on Varn's menacing hydraulic arm and scarred jaw, panning to Orin's calm, weathered face.",
+      "visual_prompt": "Subject: Orin (40, weathered skin, silver hair, heavy leather traveler's cloak, holding brass astrolabe) facing Varn (45, massive brute with hydraulic metal arm servos, scarred ceramic jaw plate, heavy iron-plated work vest). Action: Orin stands calmly with raised hands while Varn glares down at him, flanked by thugs with shock-pikes. Environment: Industrial checkpoint gate made of welded scrap metal and rusted steel beams in the Silt Docks. Camera: Low angle, dramatic framing. Lighting: Gritty yellowish floodlights from above casting deep shadows. Style: Cinematic 3D animation, detailed mechanical textures and organic wear. Character continuity anchor for Orin: Weathered skin, short silver hair, rugged traveler's build; Heavy leather traveler's cloak, reinforced boots.",
+      "audio_prompt": "Hydraulic hiss of Varn's mechanical arm shifting, electric hum of shock-pikes, boots clanking on metal grating.",
+      "continuity_notes": "Introduction of Varn, a Dredge Cartel enforcer. Orin holds his brass astrolabe visibly."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 6,
+      "location": "Foreman's Checkpoint, The Silt Docks, Vaelen",
+      "characters": [
+        "Mira",
+        "Leo",
+        "Varn"
+      ],
+      "action": "Mira steps forward smoothly, unbuttoning her teal trench coat slightly to reveal her leather-bound archive notebook, using her analytical voice to distract the enforcer while Leo subtly tests the lock on a nearby cargo crane switchboard.",
+      "dialogue": [
+        {
+          "character": "Mira",
+          "line": "Before you confiscate anything, foreman, you should know our cargo carries residual mana signatures from the Cinder Spire. Touch it, and your containment grids blow."
+        },
+        {
+          "character": "Varn",
+          "line": "You think a little spire magic scares the Cartel? Seize them!"
+        }
+      ],
+      "camera": "Over-the-shoulder medium shot past Mira towards Varn, cutting quickly to Leo's hands working the switchboard.",
+      "visual_prompt": "Subject: Mira (26, tied-back dark hair, amber eyes, teal trench coat) speaking sharply to Varn while Leo (24, messy dark hair, gray hoodie) reaches out to flip a heavy electrical knife switch on a control panel. Action: Mira steps forward defensively holding her leather-bound notebook; Leo pulls a rusted switch lever. Environment: Scrap-metal checkpoint booth in the Silt Docks. Camera: Over-the-shoulder shot with rapid cut to close-up on Leo's hands. Lighting: Harsh industrial glare, blue sparks flying from the switchboard. Style: Cinematic 3D animation. Character continuity anchor for Leo: Messy dark hair, expressive eyes, athletic build; Worn gray hoodie, dark jeans, canvas sneakers.",
+      "audio_prompt": "Sharp electric zap, metallic clunk of the heavy switch, angry grunts from the Cartel enforcers.",
+      "continuity_notes": "Mira's quick thinking creates a distraction; Leo attempts to trigger an environmental distraction."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 7,
+      "location": "Loading Pier 4, The Silt Docks, Vaelen",
+      "characters": [
+        "Leo",
+        "Kaelen",
+        "Orin",
+        "Mira"
+      ],
+      "action": "Leo flips the switch, causing an overhead magnetic crane to drop a massive stack of empty cargo containers directly between the Cartel enforcers and the group. Kaelen fires his magnetic grapple gauntlet, anchoring it to an overhead gantry line, and shouts for the others to grab on as he activates the retraction winch.",
+      "dialogue": [
+        {
+          "character": "Kaelen",
+          "line": "Hold on tight! We're taking the high road!"
+        },
+        {
+          "character": "Leo",
+          "line": "Remind me never to trust a transit schedule in this dimension again!"
+        }
+      ],
+      "camera": "Dynamic wide shot tracking the container drop, then whipping upward as Kaelen, Leo, Mira, and Orin are hoisted rapidly into the air above the docks.",
+      "visual_prompt": "Subject: Leo, Kaelen (wearing brass flight goggles and patched chitin flight duster, operating glowing green magnetic grapple gauntlet), Mira, and Orin. Action: Being hoisted rapidly upward into the dim rafters by a magnetic grapple line while metal containers crash down behind them blocking angry Cartel thugs. Environment: Vast subterranean Silt Docks pier with suspended gantry cranes and deep gray water below. Camera: Fast dynamic upward whip pan. Lighting: Flashing red security alarms and sweeping spotlights below, deep gloom above. Style: Cinematic 3D animation, high motion blur and particle dust. Character continuity anchor for Mira: Sharp amber eyes, tied-back dark hair, focused expression; Teal trench coat over practical urban wear.",
+      "audio_prompt": "Loud thunderous crash of falling metal containers, high-pitched whine of the magnetic winch, shouting guards fading below.",
+      "continuity_notes": "The group escapes initial capture by using a crane and Kaelen's grapple gauntlet."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 6,
+      "location": "Upper Catwalks, The Silt Docks, Vaelen",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "The four scramble off the dangling line onto a narrow iron catwalk high above the dock floor. Orin checks his brass astrolabe, watching the inner rings spin rapidly as they pick up a faint, stable dimensional frequency pointing deeper into the Kartel's restricted archive vaults.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "The astrolabe is reacting. There's an auxiliary portal hub down in the lower cargo vaults."
+        },
+        {
+          "character": "Mira",
+          "line": "An alternate crossing off Earth? Let's move before Cartel reinforcements find us."
+        }
+      ],
+      "camera": "Medium close-up on Orin's brass astrolabe as its rings align with a bright blue glow, panning up to the determined faces of Leo, Mira, and Kaelen.",
+      "visual_prompt": "Subject: Orin holding his glowing brass astrolabe, flanked by Leo, Mira, and Kaelen. Action: Orin examines the spinning brass rings while the others look ahead down a dark, fog-choked catwalk tunnel. Environment: High-altitude rusted iron catwalk in the Silt Docks overlooking the sprawling subterranean harbor. Camera: Close-up on the astrolabe pulling back to a medium group shot. Lighting: Cool blue light reflecting off characters' faces from the astrolabe, contrasting with the warm industrial lights far below. Style: Cinematic 3D animation, rich prop detail. Character continuity anchor for Kaelen: Lean athletic build, copper skin, cropped black hair, brass flight goggles; Patched chitin-plated flight duster, dark utility trousers.",
+      "audio_prompt": "Melodic mechanical whirring of the astrolabe rings locking into alignment, distant echoing wind in the tunnels, dripping water.",
+      "continuity_notes": "The brass astrolabe points the way to a potential alternate portal hub, setting up the next leg of their journey."
+    }
+  ]
+}

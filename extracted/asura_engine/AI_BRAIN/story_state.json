@@ -6,11 +6,11 @@
     "identity": "to be organically established in Episode 1"
   },
   "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
-  "next_episode_number": 6,
+  "next_episode_number": 7,
   "world_state": {
-    "current_location": "The Silt Docks, Lower Reaches, Vaelen",
-    "portal_status": "Chicago apartment anchor completely destroyed by a Siphon Weaver scout drone; direct return path severed",
-    "environmental_features": "Subterranean harbor, stagnant gray water, towering crane structures, barred stone tunnels, Dredge Cartel territory"
+    "current_location": "Upper Catwalks, The Silt Docks, Vaelen",
+    "portal_status": "Chicago anchor destroyed; brass astrolabe has detected an auxiliary portal frequency in the Cartel vaults",
+    "environmental_features": "Subterranean harbor, iron catwalks, Dredge Cartel restricted zones, humming machinery"
   },
   "characters": [
     {
@@ -57,21 +57,31 @@
       "name": "A small",
       "first_seen_episode": 5,
       "appearance": "rusted open-air transit car carrying Leo, Mira, Orin, and Kaelen along a single suspended rail"
+    },
+    {
+      "name": "Varn",
+      "age": 45,
+      "appearance": "Massive brute, scarred ceramic jaw plate, heavy-set frame",
+      "clothing": "Heavy iron-plated Cartel work vest, reinforced utility belt",
+      "voice": "Gruff, commanding, menacing",
+      "personality": "Ruthless enforcer, territorial, greedy",
+      "distinctive_prop": "Hydraulic metal arm servos and shock-pike",
+      "first_seen_episode": 6
     }
   ],
   "open_mysteries": [
     "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
     "Who are the Siphon Weavers and why are they actively tracking and destroying dimensional rifts?",
-    "How will Leo and Mira return to Earth now that the Cinder Spire anchor is annihilated?",
-    "What secrets and alternate portals are hidden within the Dredge Cartel-controlled Silt Docks?"
+    "Can the auxiliary portal hub in the Dredge Cartel's restricted vaults provide a safe return path to Earth?",
+    "What secrets are hidden within the Cartel's lower archive vaults?"
   ],
   "important_events": [
     "Leo and Mira arrived at the Cinder Spire balcony overlooking Vaelen's twin red suns and floating isles.",
     "Met Kaelen, an opportunistic sky scavenger who unlocked the inner spire descent gate.",
     "A crystalline Siphon Weaver scout drone obliterated the obsidian anchor with a sonic beam.",
-    "The group plummeted down the core cargo lift into the Lower Reaches.",
-    "Traveled across the subterranean chasm via an abandoned transit rail while fighting off silt-sharks.",
-    "Arrived safely at the Silt Docks, entering territory controlled by the Dredge Cartel."
+    "The group plummeted down the core cargo lift into the Lower Reaches and survived a silt-shark transit ride.",
+    "Arrived at the Silt Docks, evaded Dredge Cartel enforcer Varn using a crane switch, and escaped onto the upper catwalks via Kaelen's grapple.",
+    "Orin's brass astrolabe detected an auxiliary portal frequency leading deeper into Cartel territory."
   ],
   "continuity_rules": [
     "Keep recurring character identities and visual traits consistent.",
@@ -80,13 +90,13 @@
     "The Chicago anchor is destroyed; interdimensional return requires discovering an alternate crossing."
   ],
   "recent_episode_summaries": [
-    "Episode 3: On the Cinder Spire balcony, Leo and Mira encounter Kaelen just as a Siphon Weaver drone destroys their return anchor, forcing a plunge down the abyss lift.",
     "Episode 4: Trapped in the Lower Reaches after a mana-corrosion lift failure, the group navigates the maintenance dock to board an old suspended transit rail across the chasm.",
-    "Episode 5: Leo, Mira, Orin, and Kaelen survive a silt-shark attack while riding the suspended transit rail across the subterranean chasm, crashing into the Silt Docks where they must now navigate territory controlled by the Dredge Cartel.",
-    "Episode 5: Leo, Mira, Orin, and Kaelen board a rusted transit car to cross a subterranean chasm in Vaelen. Besieged by crystalline silt-sharks drawn by mana signatures, they survive a harrowing ride and crash-land at the Silt Docks, only to face immediate danger from patrolling Dredge Cartel enforcers."
+    "Episode 5: Leo, Mira, Orin, and Kaelen board a rusted transit car to cross a subterranean chasm in Vaelen, surviving a silt-shark attack and crash-landing at the Silt Docks.",
+    "Episode 6: Leo, Mira, Orin, and Kaelen evade Dredge Cartel enforcer Varn at the Silt Docks using a crane distraction and Kaelen's magnetic grapple, escaping to the upper catwalks where Orin's astrolabe detects an auxiliary portal frequency.",
+    "Episode 6: Leo, Mira, Orin, and Kaelen crash-land their transit car at the Silt Docks in Vaelen. They are immediately intercepted by the Dredge Cartel enforcer Varn, who demands their gear as a toll. Using a clever crane switch distraction triggered by Leo and a magnetic grapple escape engineered by Kaelen, the group evades the guards and scales the high industrial catwalks. Once safe above the harbor, Orin's brass astrolabe detects a stable auxiliary portal frequency leading deeper into the Cartel's restricted archive vaults, setting up their next perilous infiltration."
   ],
-  "last_episode_title": "Transit of the Dark Silt",
-  "last_updated_utc": "2026-11-26T17:18:03.045000+00:00",
+  "last_episode_title": "The Cartel's Toll",
+  "last_updated_utc": "2026-11-27T16:56:14.216067+00:00",
   "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
   "protagonist_age": 24,
   "last_reconciled_episode": 1,
