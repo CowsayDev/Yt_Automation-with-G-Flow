@@ -1,0 +1,306 @@
+{
+  "episode_number": 7,
+  "title": "The Vault of Echoes",
+  "logline": "Pursuing the harmonic frequency detected from the Silt Docks catwalks, Leo and his companions breach the Cartel's fortified archive annex and discover decades of salvaged Earth relics preserved in stasis pods. After neutralizing Archivist Selas, Orin uses his astrolabe to ignite an auxiliary portal,",
+  "previously_on": "Episode 6: Leo, Mira, Orin, and Kaelen crash-land their transit car at the Silt Docks in Vaelen. They are immediately intercepted by the Dredge Cartel enforcer Varn, who demands their gear as a toll. Using a clever crane switch distraction triggered by Leo and a magnetic grapple escape engineered by Kaelen, the group evades the guards and scales the high industrial catwalks. Once safe above the harbor, Orin's brass astrolabe detects a stable auxiliary portal frequency leading deeper into the Cartel's restricted archive vaults, setting up their next perilous infiltration.",
+  "story_summary": "Pursuing the harmonic frequency detected from the Silt Docks catwalks, Leo and his companions breach the Cartel's fortified archive annex and discover decades of salvaged Earth relics preserved in stasis pods. After neutralizing Archivist Selas, Orin uses his astrolabe to ignite an auxiliary portal, but the gate destabilizes into a bifurcated spatial tear between Chicago and Vaelen just as a predatory Siphon Weaver drone shatters the ceiling dome overhead, forcing an immediate blind leap into the unknown.",
+  "new_characters": [
+    {
+      "name": "Archivist Selas",
+      "age": 62,
+      "appearance": "Gaunt, pale skin, white cropped hair, milky blind eyes fitted with brass monocular magnifying lenses and an external brass lumbar spine harness.",
+      "clothing": "Heavy leaded burgundy velvet robes with Cartel insignias and reinforced brass shoulder braces.",
+      "voice": "Hoarse, rattling whisper carrying an arrogant scholarly cadence.",
+      "personality": "Calculating, possessive, fanatical guardian of interdimensional contraband.",
+      "distinctive_prop": "Motorized brass lumbar spine harness with articulated caliper clamps.",
+      "first_seen_episode": 7
+    }
+  ],
+  "character_updates": [],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 8,
+      "location": "Upper Catwalks, The Silt Docks",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "Orin crouches near the rusted industrial railing, adjusting the rotating concentric rings of his brass astrolabe, which emits a rhythmic amber pulse toward a heavy blast door below.",
+      "dialogue": [
+        {
+          "character": "Orin",
+          "line": "The resonance lock is humming right beneath the loading bay. We have minutes before Varn rallies his crew."
+        },
+        {
+          "character": "Kaelen",
+          "line": "Pneumatic seal on that bulkhead has three pressure nodes. I can crack them, but stay close."
+        }
+      ],
+      "camera": "Slow track-in from a high overhead angle down to a medium profile shot of Orin and Kaelen crouched against the rusted iron grating.",
+      "visual_prompt": "Cinematic 3D animation style. On a rusted high-altitude industrial iron catwalk overlooking a misty subterranean silt harbor, Orin (40, rugged traveler, silver hair, heavy leather cloak) manipulates a glowing brass astrolabe with intricate moving rings that project amber light beams. Beside him, Kaelen (22, copper skin, cropped black hair, brass flight goggles on forehead, patched chitin-plated flight duster) inspects the lock below. Leo (24, messy dark hair, worn gray hoodie, dark jeans) and Mira (26, sharp amber eyes, dark hair tied back, teal trench coat) watch the perimeter. Subdued industrial lighting with amber flares and murky green dock mist below, highly detailed textures, dramatic depth of field. Character continuity anchor for Kaelen: Lean athletic build, copper skin, cropped black hair, brass flight goggles; Patched chitin-plated flight duster, dark utility trousers.",
+      "audio_prompt": "Low industrial hum of machinery, distant rhythmic clang of harbor dock bells, soft clicking of precision brass gears, low tense strings crescendoing.",
+      "continuity_notes": "Continuous from Episode 6 ending where the group stood on the upper catwalks after escaping Varn."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 7,
+      "location": "Vault Bulkhead Gate, Cartel Archive Annex",
+      "characters": [
+        "Kaelen",
+        "Leo",
+        "Mira",
+        "Orin"
+      ],
+      "action": "Kaelen presses her magnetic grapple gauntlet directly into the central valve of a massive brass-ribbed pneumatic blast door, causing the emerald induction coils to surge and force the heavy locking pins back.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "Is that supposed to spark that violently?"
+        },
+        {
+          "character": "Kaelen",
+          "line": "Only when it works. Brace yourselves."
+        }
+      ],
+      "camera": "Low-angle medium close-up following the green electrical discharge from Kaelen's gauntlet into the door lock, pulling back as the steam valve vents forcefully.",
+      "visual_prompt": "Cinematic 3D animation style. In a dark subterranean stone and iron corridor, Kaelen (22, copper skin, black cropped hair, chitin-plated duster) holds her mechanical gauntlet against a massive circular iron vault door adorned with Cartel sigils. Glowing green magnetic induction coils spark violently against corroded bronze pins. Leo (24, athletic build, messy dark hair, worn gray hoodie) recoils slightly from flying embers. High-contrast lighting dominated by emerald arc flashes and steam bursts, sharp metallic textures, atmospheric volumetric fog. Character continuity anchor for Leo: Messy dark hair, expressive eyes, athletic build; Worn gray hoodie, dark jeans, canvas sneakers.",
+      "audio_prompt": "Violent electrical crackle, high-pitched magnetic whine, explosive release of high-pressure steam hiss, heavy clunk of hydraulic bolts releasing.",
+      "continuity_notes": "Kaelen uses her magnetic grapple gauntlet introduced in Episode 3."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 9,
+      "location": "Grand Hall, Cartel Archive Vault",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "The vault doors grind open, revealing a cavernous hall lined with suspended cylindrical stasis tanks containing salvage from Earth, including a shattered Chicago subway turnstile and glowing mana crystals.",
+      "dialogue": [
+        {
+          "character": "Mira",
+          "line": "They aren't just dredging scrap. They've been harvesting material pulled through rift breaches for decades."
+        },
+        {
+          "character": "Leo",
+          "line": "That's a CTA transit gate... They're pulling pieces of my city into this place."
+        }
+      ],
+      "camera": "Wide establishing tracking shot gliding forward through the cavernous vault as the four characters walk in silhouette against towering illuminated glass stasis cylinders.",
+      "visual_prompt": "Cinematic 3D animation style. A massive subterranean archive vault carved into obsidian bedrock, featuring towering cylindrical glass stasis pods filled with luminous amber fluid. Inside the pods float recognizable modern Earth artifacts—a rusted Chicago transit turnstile, vintage streetlamps, and shattered asphalt—alongside alien geometric crystals. Leo (24, messy dark hair, gray hoodie, dark jeans) gazes upward in disbelief beside Mira (26, dark hair, teal trench coat, holding her leather archive notebook). Soft amber volumetric backlighting, eerie cyan highlights, dust motes floating in silent stasis air. Character continuity anchor for Mira: Sharp amber eyes, tied-back dark hair, focused expression; Teal trench coat over practical urban wear.",
+      "audio_prompt": "Deep reverberant vault acoustics, gentle liquid bubbling from stasis pods, faint dissonant electronic hum, solemn ambient synthesizer pad.",
+      "continuity_notes": "Confirms the Cartel collects rift fallout, connecting to the Earth dimensional rupture mystery."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 8,
+      "location": "Relic Dais, Cartel Archive Vault",
+      "characters": [
+        "Archivist Selas",
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen"
+      ],
+      "action": "Archivist Selas descends on an overhead brass rail lift, his mechanical lumbar harness whirring into position as he locks his milky ocular implants onto the intruders.",
+      "dialogue": [
+        {
+          "character": "Archivist Selas",
+          "line": "Unregistered hands among the Dredge harvest. You carry the frequency of a shattered prime anchor."
+        },
+        {
+          "character": "Orin",
+          "line": "Step away from the dais, Selas. We only want the auxiliary gate."
+        }
+      ],
+      "camera": "Medium shot tilting down from the overhead ceiling rail as Selas descends into frame, cutting to an over-the-shoulder shot from behind Leo and Orin facing him.",
+      "visual_prompt": "Cinematic 3D animation style. Archivist Selas (62, gaunt face, pale skin, white hair, milky blind eyes fitted with brass monocular magnifying lenses, wearing leaded burgundy velvet robes supported by a motorized brass spine harness) glides down on a suspended crane track. Behind him stands a circular stone dais housing a sleeping auxiliary portal ring. Orin (40, silver hair, traveler's cloak, holding brass astrolabe) stands defensively in the foreground with Leo (24, gray hoodie). Dramatic rim lighting, industrial gothic fantasy aesthetic, brass clockwork reflections. Character continuity anchor for Orin: Weathered skin, short silver hair, rugged traveler's build; Heavy leather traveler's cloak, reinforced boots.",
+      "audio_prompt": "Whir of tiny precision servo motors, metallic hiss of hydraulic suspension lift, raspy rattling voice with slight acoustic echo, sudden low sub-bass tension note.",
+      "continuity_notes": "First appearance of Archivist Selas, the Cartel's contraband curator."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 7,
+      "location": "Relic Dais, Cartel Archive Vault",
+      "characters": [
+        "Archivist Selas",
+        "Mira",
+        "Kaelen"
+      ],
+      "action": "Selas lunges his gaunt hand toward an emergency tripwire on the dais console, but Kaelen fires her grapple cable, snagging his mechanical arm servo and pinning it to an iron column.",
+      "dialogue": [
+        {
+          "character": "Archivist Selas",
+          "line": "The Weavers listen to every harmonic spike! You will doom the entire district!"
+        },
+        {
+          "character": "Mira",
+          "line": "Kaelen, hold him! The portal terminal requires an active tether frequency—Orin, now!"
+        }
+      ],
+      "camera": "Dynamic side-angle whip pan from Selas reaching for the lever to Kaelen firing her gauntlet, followed by a tight snap zoom on the tethered brass mechanism.",
+      "visual_prompt": "Cinematic 3D animation style. Fast-paced action shot. Kaelen (22, athletic build, copper skin, chitin duster) leans back with her extended left arm firing a high-tension cable glowing with green magnetic rings. The cable wraps around the brass prosthetic arm harness of Archivist Selas (62, pale, velvet robes, brass optics), wrenching his hand away from a crimson lever mounted on a runic bronze console. Mira (26, teal coat, open leather notebook) rushes toward the central pedestal. Kinetic motion blur, bright green magnetic spark trails, dramatic high-contrast lighting. Character continuity anchor for Kaelen: Lean athletic build, copper skin, cropped black hair, brass flight goggles; Patched chitin-plated flight duster, dark utility trousers.",
+      "audio_prompt": "Sharp pneumatic cable launch, loud metallic snap as cable binds brass arm, mechanical servo grinding in protest, frantic warning shout.",
+      "continuity_notes": "Selas warns about the Siphon Weavers hearing harmonic spikes, building on established lore."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 9,
+      "location": "Portal Ring Dais, Cartel Archive Vault",
+      "characters": [
+        "Orin",
+        "Leo",
+        "Mira"
+      ],
+      "action": "Orin inserts the central spindle of his brass astrolabe into the core receptacle of the dormant stone portal ring, triggering a shockwave of sapphire and gold light that begins rotating the inner glyph wheels.",
+      "dialogue": [
+        {
+          "character": "Leo",
+          "line": "Is that supposed to open to Chicago? The coordinates look completely wild!"
+        },
+        {
+          "character": "Orin",
+          "line": "The primary channel is gone. This auxiliary frequency is latching onto whatever resonance remains!"
+        }
+      ],
+      "camera": "Low-angle circle track around the rotating portal ring as beams of intense light erupt from the ground and illuminate Leo, Mira, and Orin.",
+      "visual_prompt": "Cinematic 3D animation style. At the center of the vault, a massive vertical stone and bronze ring twenty feet tall roars into life. Orin (40, silver hair, leather cloak) drives his brass astrolabe into a central bronze pedestal. Spiraling concentric rings of sapphire energy and golden runic script spin violently within the circular gate aperture. Leo (24, messy hair, gray hoodie, shielding his eyes with one arm) and Mira (26, teal trench coat flapping in dimensional wind) stand at the rim. Blinding ethereal blue and amber light, wind-blown hair and cloth, volumetric lens flare. Character continuity anchor for Mira: Sharp amber eyes, tied-back dark hair, focused expression; Teal trench coat over practical urban wear.",
+      "audio_prompt": "Deep resonant gong-like portal ignition chime, roaring vortex of rushing wind and harmonic distortion, sharp crystal hum vibrating through the floor.",
+      "continuity_notes": "The portal activates using the astrolabe frequency detected at the end of Episode 6."
+    },
+    {
+      "scene_number": 7,
+      "duration_seconds": 8,
+      "location": "Vault Dome, Cartel Archive Vault",
+      "characters": [
+        "Leo",
+        "Mira",
+        "Orin",
+        "Kaelen",
+        "Archivist Selas"
+      ],
+      "action": "A terrifying high-frequency shriek shatters the reinforced glass dome above; a segmented crystalline needle from a Siphon Weaver drone punches through the ceiling as the vortex inside the portal reveals a rain-slicked Chicago street overlapped with Vaelen's red sky.",
+      "dialogue": [
+        {
+          "character": "Kaelen",
+          "line": "Weaver drone! It tracked the ignition pulse!"
+        },
+        {
+          "character": "Mira",
+          "line": "The gateway is bifurcated—jump or be eradicated!"
+        }
+      ],
+      "camera": "Dramatic vertical tilt up to the shattering glass ceiling revealing the crystalline spider-needle descending, then whip pan down to the roaring split-reality vortex directly ahead.",
+      "visual_prompt": "Cinematic 3D animation style. Dramatic climax. High above the vault floor, the massive reinforced industrial glass dome shatters inward in a cascade of glittering crystalline fragments. Through the breach thrusts a razor-sharp, translucent crystalline needle leg of a colossal Siphon Weaver entity, glowing with lethal ultraviolet resonance. Below, the portal vortex churns violently, showing a flickering double-exposure view of a rain-soaked nighttime Chicago avenue merged with the jagged spires of Vaelen. Leo (24, gray hoodie, windblown hair) pivots toward the threshold, bracing to leap. Hyper-detailed particles, shattered glass reflections, intense ultraviolet and amber lighting contrast. Character continuity anchor for Leo: Messy dark hair, expressive eyes, athletic build; Worn gray hoodie, dark jeans, canvas sneakers.",
+      "audio_prompt": "Ear-splitting glass detonation, terrifying multi-toned alien sonic screech, thunderous vortex roar, rapid alarm claxon sirens ringing across the vault.",
+      "continuity_notes": "Ends on a critical cliffhanger with the Siphon Weaver breaching the vault and the bifurcated gateway active."
+    }
+  ],
+  "ending_hook": "With a towering Siphon Weaver drone piercing the shattered ceiling dome and the auxiliary gate unstable, Leo and his companions must jump directly into a bifurcated vortex showing both rainy Chicago and Vaelen simultaneously, leaving their destination and survival uncertain.",
+  "next_episode_seeds": [],
+  "memory_update": {
+    "world_state": {
+      "current_location": "Portal Ring Dais, Cartel Archive Vault, The Silt Docks, Vaelen",
+      "portal_status": "Auxiliary gate activated but bifurcated and unstable; displaying a mixed reality of Chicago and Vaelen",
+      "environmental_features": "Shattered glass ceiling dome, descending Siphon Weaver needle drone, stasis tanks containing Earth rift debris, roaring dimensional vortex"
+    },
+    "characters": [
+      {
+        "name": "Leo",
+        "age": 24,
+        "appearance": "Messy dark hair, expressive eyes, athletic build",
+        "clothing": "Worn gray hoodie, dark jeans, canvas sneakers",
+        "voice": "Casual, grounded, increasingly bewildered",
+        "personality": "Inquisitive, reluctant hero, quick to react",
+        "distinctive_prop": "Cracked porcelain coffee mug fragments in his apartment",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Mira",
+        "age": 26,
+        "appearance": "Sharp amber eyes, tied-back dark hair, focused expression",
+        "clothing": "Teal trench coat over practical urban wear",
+        "voice": "Analytical, sharp, knowledgeable",
+        "personality": "Cautious scholar, resourceful, protective",
+        "distinctive_prop": "Leather-bound archive notebook",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Orin",
+        "age": 40,
+        "appearance": "Weathered skin, short silver hair, rugged traveler's build",
+        "clothing": "Heavy leather traveler's cloak, reinforced boots",
+        "voice": "Gravelly, urgent, authoritative",
+        "personality": "Pragmatic survivalist, secretive, mission-driven",
+        "distinctive_prop": "Brass astrolabe that manipulates dimensional tethers",
+        "first_seen_episode": 2
+      },
+      {
+        "name": "Kaelen",
+        "age": 22,
+        "appearance": "Lean athletic build, copper skin, cropped black hair, brass flight goggles",
+        "clothing": "Patched chitin-plated flight duster, dark utility trousers",
+        "voice": "Brisk, irreverent, sharp-tongued",
+        "personality": "Street-smart scavenger, opportunistic, cautious ally",
+        "distinctive_prop": "Magnetic grapple gauntlet with glowing green induction coils",
+        "first_seen_episode": 3
+      },
+      {
+        "name": "A small",
+        "first_seen_episode": 5,
+        "appearance": "rusted open-air transit car carrying Leo, Mira, Orin, and Kaelen along a single suspended rail"
+      },
+      {
+        "name": "Varn",
+        "age": 45,
+        "appearance": "Massive brute, scarred ceramic jaw plate, heavy-set frame",
+        "clothing": "Heavy iron-plated Cartel work vest, reinforced utility belt",
+        "voice": "Gruff, commanding, menacing",
+        "personality": "Ruthless enforcer, territorial, greedy",
+        "distinctive_prop": "Hydraulic metal arm servos and shock-pike",
+        "first_seen_episode": 6
+      },
+      {
+        "name": "Archivist Selas",
+        "age": 62,
+        "appearance": "Gaunt, pale skin, white cropped hair, milky blind eyes fitted with brass monocular magnifying lenses and an external brass lumbar spine harness.",
+        "clothing": "Heavy leaded burgundy velvet robes with Cartel insignias and reinforced brass shoulder braces.",
+        "voice": "Hoarse, rattling whisper carrying an arrogant scholarly cadence.",
+        "personality": "Calculating, possessive, fanatical guardian of interdimensional contraband.",
+        "distinctive_prop": "Motorized brass lumbar spine harness with articulated caliper clamps.",
+        "first_seen_episode": 7
+      }
+    ],
+    "open_mysteries": [
+      "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
+      "Who are the Siphon Weavers and why are they actively tracking and destroying dimensional rifts?",
+      "Why is the auxiliary portal bifurcated between rainy Chicago and Vaelen?",
+      "How long has the Dredge Cartel been secretly hoarding Earth artifacts in stasis?"
+    ],
+    "important_events": [
+      "Kaelen used her induction gauntlet to bypass the pneumatic blast door of the Cartel Archive Annex.",
+      "The party discovered the Cartel's secret stash of Earth relics suspended in stasis pods, including a Chicago subway gate.",
+      "Kaelen immobilized Cartel Archivist Selas before he could trigger the vault's blast doors.",
+      "Orin engaged the auxiliary portal using his brass astrolabe, sparking an unstable bifurcated gate.",
+      "A Siphon Weaver drone detected the portal ignition and shattered the vault's glass dome to attack."
+    ],
+    "continuity_rules": [
+      "Keep recurring character identities and visual traits consistent.",
+      "Invent new characters, places and plotlines when narratively useful.",
+      "Maintain cause and effect across episodes.",
+      "The Chicago anchor is destroyed; auxiliary crossings are unstable and risk interdimensional overlap."
+    ],
+    "recent_episode_summaries": [
+      "Episode 5: Leo, Mira, Orin, and Kaelen board a rusted transit car to cross a subterranean chasm in Vaelen, surviving a silt-shark attack and crash-landing at the Silt Docks.",
+      "Episode 6: Leo, Mira, Orin, and Kaelen evade Dredge Cartel enforcer Varn at the Silt Docks using a crane distraction and Kaelen's magnetic grapple, escaping to the upper catwalks where Orin's astrolabe detects an auxiliary portal frequency.",
+      "Episode 7: Infiltrating the Cartel Archive Vault, Leo and the group discover hoarded Earth relics. Kaelen restrains Archivist Selas while Orin ignites the auxiliary portal ring, only for an unstable bifurcated rift to open just as a Siphon Weaver drone smashes through the ceiling dome.",
+      "Episode 7: Pursuing the harmonic frequency detected from the Silt Docks catwalks, Leo and his companions breach the Cartel's fortified archive annex and discover decades of salvaged Earth relics preserved in stasis pods. After neutralizing Archivist Selas, Orin uses his astrolabe to ignite an auxiliary portal, but the gate destabilizes into a bifurcated spatial tear between Chicago and Vaelen just as a predatory Siphon Weaver drone shatters the ceiling dome overhead, forcing an immediate blind leap into the unknown."
+    ]
+  },
+  "generation_model": "gemini-3.8-flash"
+}

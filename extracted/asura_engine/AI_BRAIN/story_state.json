@@ -6,11 +6,11 @@
     "identity": "to be organically established in Episode 1"
   },
   "creative_policy": "high creative freedom; no fixed plot or predetermined ending; preserve continuity",
-  "next_episode_number": 7,
+  "next_episode_number": 8,
   "world_state": {
-    "current_location": "Upper Catwalks, The Silt Docks, Vaelen",
-    "portal_status": "Chicago anchor destroyed; brass astrolabe has detected an auxiliary portal frequency in the Cartel vaults",
-    "environmental_features": "Subterranean harbor, iron catwalks, Dredge Cartel restricted zones, humming machinery"
+    "current_location": "Portal Ring Dais, Cartel Archive Vault, The Silt Docks, Vaelen",
+    "portal_status": "Auxiliary gate activated but bifurcated and unstable; displaying a mixed reality of Chicago and Vaelen",
+    "environmental_features": "Shattered glass ceiling dome, descending Siphon Weaver needle drone, stasis tanks containing Earth rift debris, roaring dimensional vortex"
   },
   "characters": [
     {
@@ -67,38 +67,47 @@
       "personality": "Ruthless enforcer, territorial, greedy",
       "distinctive_prop": "Hydraulic metal arm servos and shock-pike",
       "first_seen_episode": 6
+    },
+    {
+      "name": "Archivist Selas",
+      "age": 62,
+      "appearance": "Gaunt, pale skin, white cropped hair, milky blind eyes fitted with brass monocular magnifying lenses and an external brass lumbar spine harness.",
+      "clothing": "Heavy leaded burgundy velvet robes with Cartel insignias and reinforced brass shoulder braces.",
+      "voice": "Hoarse, rattling whisper carrying an arrogant scholarly cadence.",
+      "personality": "Calculating, possessive, fanatical guardian of interdimensional contraband.",
+      "distinctive_prop": "Motorized brass lumbar spine harness with articulated caliper clamps.",
+      "first_seen_episode": 7
     }
   ],
   "open_mysteries": [
     "What caused the glass pavement in Chicago to bleed magical resonance into Leo's apartment?",
     "Who are the Siphon Weavers and why are they actively tracking and destroying dimensional rifts?",
-    "Can the auxiliary portal hub in the Dredge Cartel's restricted vaults provide a safe return path to Earth?",
-    "What secrets are hidden within the Cartel's lower archive vaults?"
+    "Why is the auxiliary portal bifurcated between rainy Chicago and Vaelen?",
+    "How long has the Dredge Cartel been secretly hoarding Earth artifacts in stasis?"
   ],
   "important_events": [
-    "Leo and Mira arrived at the Cinder Spire balcony overlooking Vaelen's twin red suns and floating isles.",
-    "Met Kaelen, an opportunistic sky scavenger who unlocked the inner spire descent gate.",
-    "A crystalline Siphon Weaver scout drone obliterated the obsidian anchor with a sonic beam.",
-    "The group plummeted down the core cargo lift into the Lower Reaches and survived a silt-shark transit ride.",
-    "Arrived at the Silt Docks, evaded Dredge Cartel enforcer Varn using a crane switch, and escaped onto the upper catwalks via Kaelen's grapple.",
-    "Orin's brass astrolabe detected an auxiliary portal frequency leading deeper into Cartel territory."
+    "Kaelen used her induction gauntlet to bypass the pneumatic blast door of the Cartel Archive Annex.",
+    "The party discovered the Cartel's secret stash of Earth relics suspended in stasis pods, including a Chicago subway gate.",
+    "Kaelen immobilized Cartel Archivist Selas before he could trigger the vault's blast doors.",
+    "Orin engaged the auxiliary portal using his brass astrolabe, sparking an unstable bifurcated gate.",
+    "A Siphon Weaver drone detected the portal ignition and shattered the vault's glass dome to attack."
   ],
   "continuity_rules": [
     "Keep recurring character identities and visual traits consistent.",
     "Invent new characters, places and plotlines when narratively useful.",
     "Maintain cause and effect across episodes.",
-    "The Chicago anchor is destroyed; interdimensional return requires discovering an alternate crossing."
+    "The Chicago anchor is destroyed; auxiliary crossings are unstable and risk interdimensional overlap."
   ],
   "recent_episode_summaries": [
-    "Episode 4: Trapped in the Lower Reaches after a mana-corrosion lift failure, the group navigates the maintenance dock to board an old suspended transit rail across the chasm.",
     "Episode 5: Leo, Mira, Orin, and Kaelen board a rusted transit car to cross a subterranean chasm in Vaelen, surviving a silt-shark attack and crash-landing at the Silt Docks.",
     "Episode 6: Leo, Mira, Orin, and Kaelen evade Dredge Cartel enforcer Varn at the Silt Docks using a crane distraction and Kaelen's magnetic grapple, escaping to the upper catwalks where Orin's astrolabe detects an auxiliary portal frequency.",
-    "Episode 6: Leo, Mira, Orin, and Kaelen crash-land their transit car at the Silt Docks in Vaelen. They are immediately intercepted by the Dredge Cartel enforcer Varn, who demands their gear as a toll. Using a clever crane switch distraction triggered by Leo and a magnetic grapple escape engineered by Kaelen, the group evades the guards and scales the high industrial catwalks. Once safe above the harbor, Orin's brass astrolabe detects a stable auxiliary portal frequency leading deeper into the Cartel's restricted archive vaults, setting up their next perilous infiltration."
+    "Episode 7: Infiltrating the Cartel Archive Vault, Leo and the group discover hoarded Earth relics. Kaelen restrains Archivist Selas while Orin ignites the auxiliary portal ring, only for an unstable bifurcated rift to open just as a Siphon Weaver drone smashes through the ceiling dome.",
+    "Episode 7: Pursuing the harmonic frequency detected from the Silt Docks catwalks, Leo and his companions breach the Cartel's fortified archive annex and discover decades of salvaged Earth relics preserved in stasis pods. After neutralizing Archivist Selas, Orin uses his astrolabe to ignite an auxiliary portal, but the gate destabilizes into a bifurcated spatial tear between Chicago and Vaelen just as a predatory Siphon Weaver drone shatters the ceiling dome overhead, forcing an immediate blind leap into the unknown."
   ],
-  "last_episode_title": "The Cartel's Toll",
-  "last_updated_utc": "2026-11-27T16:56:14.216067+00:00",
+  "last_episode_title": "The Vault of Echoes",
+  "last_updated_utc": "2026-11-28T15:57:14.707359+00:00",
   "format": "ongoing cinematic 3D animated series blending the real world with fantasy",
   "protagonist_age": 24,
   "last_reconciled_episode": 1,
-  "last_episode_generation_model": "gemini-3.5-flash-lite"
+  "last_episode_generation_model": "gemini-3.8-flash"
 }
